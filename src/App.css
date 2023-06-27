@@ -58,7 +58,10 @@
   z-index: 10px;
 }
 
+
+
 .stratButton {
+  cursor: pointer;
   background: linear-gradient(
     90deg,
     rgba(77, 177, 147, 1) 0%,
@@ -72,11 +75,29 @@
     rgba(77, 177, 147, 1) 0%,
     rgba(222, 251, 140, 1) 100%
   );
+  box-shadow: 0 20px 30px -6px rgba(97, 238, 139, 0.5);
   border-image-slice: 1;
   color: white;
   width: 180px;
   height: 55px;
   display: flex;
+  transition: all 0.3s ease-in-out;
+}
+.stratButton:hover{
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.stratButton:active{
+  opacity: 0.5;
+}
+
+.stratButton > img {
+  transition: all 0.3s ease-in-out;
+}
+
+.stratButton:hover > img {
+  transform: translateX(5px);
 }
 
 .stratButtonArrow{
