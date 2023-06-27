@@ -29,7 +29,7 @@ const ServicePage = () => {
               HealthTrack
             </div>
             
-            <div style={{color:'grey',marginTop:'30px',lineHeight:'25px',marginBottom:'20px',fontSize:'20px'}}>
+            <div style={{color:'grey',marginTop:'0px',lineHeight:'25px',marginBottom:'20px',fontSize:'20px', fontFamily: 'Alef'}}>
               The HealthTrack Calculator utilizes user-provided information, including age, lifestyle, and medical conditions, to effectively analyze relevant databases. This analysis yields real-life disease data tailored to the user&#039;s specific information. Furthermore, the Healthtrack calculator offers personalized advice on adopting healthy lifestyles.
             </div>
 
