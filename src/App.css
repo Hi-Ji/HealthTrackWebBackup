@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+.test{
+  border: 1px solid red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* bigger than 900px */
+.logoBiger{
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 900px) {
+  .logoBiger {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* smaller than 900px */
+.logoSmaller{
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .logoSmaller {
+    display: block;
+  }
+}
+
+.navbarNavigation{
+  margin-right: 20px!important;
+  color: #000!important;
+}
+
+.navbarNavigationAssessment{
+  margin-right: 20px!important;
+  color: white!important;
+  background-color: #4DB193!important;
+  border-radius: 12px!important;
+  padding: 0 10px!important;
+}
+
+/* navbar setting */
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  box-shadow:none!important;
+  background-color: #F0F8EC!important;
+}
+
+.navbar{
+  position: fixed!important;
+  margin-bottom: 100px!important;
+  z-index: 10px;
+}
+
+.stratButton {
+  background: linear-gradient(
+    90deg,
+    rgba(77, 177, 147, 1) 0%,
+    rgba(222, 251, 140, 1) 100%
+  );
+  border-radius: 35rem;
+  border-width: 0rem;
+  border-style: solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(77, 177, 147, 1) 0%,
+    rgba(222, 251, 140, 1) 100%
+  );
+  border-image-slice: 1;
   color: white;
+  width: 180px;
+  height: 55px;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.stratButtonArrow{
+  width: 10px;
+  height: 25px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 14px;
+  padding-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.stratButtonContent{
+  width: 50px;
+  height: 20px;
+  display: inline;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;  
+  margin-top: 16px;
+  font-size: larger;
+  padding-left: 18px;
+  font-weight: bold;
+  
+}
+
+.css-1k7sk4d-MuiGrid-root{
+  margin: 0 auto!important;
+}
+/* .serviceInfo{
+  border: 1px solid red;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 30px;
+} */
+
+@media (min-width: 900px) {
+  .serviceInfoTitle{
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+  .serviceInfoTitle{
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .serviceInfoTitle{
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 45px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .serviceInfo {
+    max-width: 500px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .serviceInfo {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .ServiceDoctor{
+    /* border: 1px solid red; */
+    max-width: 500px;
+    max-height: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ServiceDoctor{
+    min-width: 400px; 
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+  .ServiceDoctor{
+    min-width: 400px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .ServiceDoctor{
+    min-width: 300px; 
+  }
+}
+
+@media (max-width: 900px) {
+  .nextButton{
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .diseaseBook{
+    margin-top: 100px;
+    width: 400px;
+    transform: scale(2);
+    position: relative;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+  .diseaseBook{
+    margin-top: 50px;
+    width: 300px;
+    transform: scale(2);
+  }
+}
+
+@media (max-width: 500px) {
+  .diseaseBook{
+    margin-top: -60px;
+    width: 200px;
+    transform: scale(2);
+  }
+}
+
+@media (min-width: 900px) {
+  .tutorialHand{
+    float: right;
+    width: 45%;
+    vertical-align: top;
+    min-width: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  .tutorialInfor{
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+  .tutorialHand{
+    width: 400px;
+    margin: 0 auto;
   }
 }
