@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const ServicePage = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}  style={{paddingTop:'130px',margin:'0 auto'}}  maxWidth="lg">
+    <Box sx={{ flexGrow: 1 }}  style={{paddingTop:'130px',margin:'0 auto'}}>
       <Grid container spacing={2}>
         <Grid item md={6} >
           <div className='serviceInfo' >

@@ -4,7 +4,7 @@ import TutorialHand from '../Components/TutorialPage/TutorialHand.svg'
 
 const TutorialPage = () => {
   return (
-    <div style={{margin:'0px auto 0 auto',maxWidth:'1075px',padding:'0 60px'}}>
+    <div style={{margin:'0px auto 0 auto',padding:'0 60px'}}>
       <div className='tutorialInfor'>
         <div style={{fontSize:'35px',fontWeight:'bold',lineHeight: "100px", fontFamily:'Alef'}}>Before using HealthTrack</div>
         <div style={{fontSize:'16px',marginTop:'30px',lineHeight:'30px',color:'#5f5f5f',fontFamily: 'Alef'}}>We expect you to have a health assessment, otherwise you might not able to use the complete servuces privided by our product &#40;the report will only be used as a reference for your immediate health status&#41;</div>

@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" className='navbar'>
-      <Container maxWidth="lg">
+      <Container>
         <Toolbar disableGutters>
           <img src={Logo} alt="SVG Logo" className='logoBiger' />
           <Typography
