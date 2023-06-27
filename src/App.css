@@ -111,8 +111,7 @@
 
 @media (min-width: 900px) {
   .serviceInfoTitle{
-    font-family: monospace;
-    font-weight: 900;
+    font-family: "Angkor";
     font-size: 60px;
     margin-top: 20px;
   }
@@ -120,8 +119,7 @@
 
 @media (min-width: 500px) and (max-width: 900px){
   .serviceInfoTitle{
-    font-family: monospace;
-    font-weight: 900;
+    font-family: "Angkor";
     font-size: 60px;
     margin-top: 20px;
   }
@@ -129,8 +127,7 @@
 
 @media (max-width: 500px) {
   .serviceInfoTitle{
-    font-family: monospace;
-    font-weight: 900;
+    font-family: "Angkor";
     font-size: 45px;
     margin-top: 30px;
   }

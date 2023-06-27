@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'Alef',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'black',
@@ -94,7 +94,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" fontFamily="Alef">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -109,7 +109,7 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Alef',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'black',
