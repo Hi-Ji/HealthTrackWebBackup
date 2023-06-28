@@ -1,6 +1,5 @@
 import React from 'react'
-// import Caret from '../Components/TutorialPage/Caret.svg'
-import TutorialHand from '../Components/TutorialPage/Image/TutorialHand.svg'
+import TutorialHand from '../Components/TutorialPage/Image/TutorialHandVersionTwo.svg'
 import Text from '../data/Text.json'
 import Assessment from '../Components/TutorialPage/Button/Assessment';
 import StartItLaterButton from '../Components/TutorialPage/Button/StartItLaterButton';
