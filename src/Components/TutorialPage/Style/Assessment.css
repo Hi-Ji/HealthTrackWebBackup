@@ -1,14 +1,31 @@
 
 .assessmentButtonHolder {
-    background-color: #4db193;
+    cursor: pointer;
+    background: linear-gradient(
+    90deg,
+    rgba(77, 177, 147, 1) 0%,
+      rgba(11,156,49,0.6) 100%
+  );
+    box-shadow: 0 15px 25px -5px rgba(166, 221, 183, 0.5);
     width: 250px;
     height: 50px;
     text-align: center;
     border-radius: 13px;
     display: inline-block;
     margin-right: 20px;
+    box-shadow: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .assessmentButtonHolder:hover{
+    transform: translateY(3px);
+    box-shadow: none;
   }
   
+  .assessmentButtonHolder:active{
+    transform: scale(80%);
+  }
+
   .assessmentButtonText {
     display: inline-block;
     color: white;
@@ -24,3 +41,14 @@
     top: 5px;
     left: 4px;
   }
+
+  .assessmentButtonHolder > Img{
+    transition: all 0.3s ease-in-out;
+  }
+
+  .assessmentButtonHolder:hover > Img{
+    transform: translateX(3px);
+  }
+
+
+  
