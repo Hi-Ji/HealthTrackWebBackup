@@ -78,7 +78,7 @@
     rgba(77, 177, 147, 1) 0%,
     rgba(222, 251, 140, 1) 100%
   );
-  box-shadow: 0 20px 30px -6px rgba(97, 238, 139, 0.5);
+  box-shadow: 0 15px 25px -5px rgba(97, 238, 139, 0.5);
   border-image-slice: 1;
   color: white;
   width: 180px;
