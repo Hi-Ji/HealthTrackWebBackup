@@ -13,13 +13,18 @@
     border-radius: 13px;
     color: #4db193;
     margin-top: 20px;
+    user-select: none;
     transition: all 0.3s ease-in-out;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
 }
 
 .startItLaterButtonText:hover{
+    
     transform: translateY(3px);
 }
 
 .startItLaterButtonText:active{
-    transform: scale(80%);
+    transform: scale(90%);
 }
