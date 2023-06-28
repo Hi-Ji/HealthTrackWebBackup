@@ -1,6 +1,6 @@
 import React from 'react'
-import StartArrow from './StartArrow.svg'
-import Text from '../../data/Text.json'
+import StartArrow from '../Image/StartArrow.svg'
+import Text from '../../../data/Text.json'
 
 const StartButton = () => {
   return (

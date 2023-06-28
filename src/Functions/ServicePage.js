@@ -5,9 +5,9 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import ServiceDoctor from '../Components/ServicePage/ServiceDoctor.svg'
-import StartButton from '../Components/ServicePage/StartButton';
-import NextButton from '../Components/ServicePage/NextButton';
+import ServiceDoctor from '../Components/ServicePage/Image/ServiceDoctor.svg'
+import StartButton from '../Components/ServicePage/Button/StartButton';
+import NextButton from '../Components/ServicePage/Button/NextButton';
 import Text from '../data/Text.json';
 
 const Item = styled(Paper)(({ theme }) => ({

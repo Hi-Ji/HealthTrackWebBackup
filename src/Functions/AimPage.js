@@ -1,7 +1,7 @@
 import React from 'react'
 import DiseaseBook from '../Components/AimPage/DiseaseBook.svg'
 import Text from '../data/Text.json'
-import NextButton from '../Components/ServicePage/NextButton'
+import NextButton from '../Components/ServicePage/Button/NextButton'
 
 
 const AimPage = () => {
