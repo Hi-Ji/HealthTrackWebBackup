@@ -3,8 +3,9 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         width="430" height="500"
-        
     >
+
+
         <path
             d="M298.693 86.2242C295.548 83.6068 292.118 81.3308 288.433 79.4389L289.699 77.0207C289.699 77.7035 290.838 78.1871 291.407 77.4474C294.367 73.6067 298.636 71.1885 303.219 69.6807C307.36 72.4687 311.188 75.6693 314.632 79.2113C309.324 81.5584 304.001 83.8913 298.693 86.2242Z"
             fill="#5FAB76"
@@ -920,7 +921,7 @@
             strokeDasharray="4 4"
             stroke-dasharray="5 5"
         />
-        <text x="0" y="-65" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="0" y="-65" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi, Arial, sans-serif" font-weight="bolder">
             OBESITY
         </text>
         <text x="210" y="-60" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
