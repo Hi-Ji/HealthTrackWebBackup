@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import ServiceDoctor from '../Components/ServicePage/ServiceDoctor.svg'
 import StartButton from '../Components/ServicePage/StartButton';
 import NextButton from '../Components/ServicePage/NextButton';
+import Text from '../data/Text.json';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -26,11 +27,11 @@ const ServicePage = () => {
             <StartButton />
             
             <div className='serviceInfoTitle'>
-              HealthTrack
+              {Text.HealthTrack}
             </div>
             
-            <div style={{color:'grey',marginTop:'0px',lineHeight:'25px',marginBottom:'20px',fontSize:'20px', fontFamily: 'Alef'}}>
-              The HealthTrack Calculator utilizes user-provided information, including age, lifestyle, and medical conditions, to effectively analyze relevant databases. This analysis yields real-life disease data tailored to the user&#039;s specific information. Furthermore, the Healthtrack calculator offers personalized advice on adopting healthy lifestyles.
+            <div style={{color:'grey',marginTop:'0px',lineHeight:'30px',marginBottom:'20px',fontSize:'20px', fontFamily: 'Alef'}}>
+              {Text.TheHealthTrackCalc}
             </div>
 
 
@@ -41,7 +42,7 @@ const ServicePage = () => {
         </Grid>
 
         <div className='nextButton'>
-          <NextButton />
+          <NextButton left='80px' top='60px'/>
         </div>
         
 
