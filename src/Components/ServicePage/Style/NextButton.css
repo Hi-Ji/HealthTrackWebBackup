@@ -1,0 +1,7 @@
+.servicePageNextButton {
+    background-color: #FDE383;
+    width: 40px;
+    padding: 25px;
+    border-radius: 100%;
+    box-shadow: 0 20px 30px -6px rgba(240, 255, 79, 0.5);
+}
