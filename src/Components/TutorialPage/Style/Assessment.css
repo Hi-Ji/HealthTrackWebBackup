@@ -1,0 +1,26 @@
+
+.buttonHolder {
+    background-color: #4db193;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border-radius: 13px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .buttonText {
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    font-family: 'Alef';
+    font-size: 15px;
+  }
+  
+  .buttonImg {
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 4px;
+  }

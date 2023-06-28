@@ -46,15 +46,14 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <img src={Logo} alt="SVG Logo" className='logoBiger' />
           <Typography
-            variant="h6"
             noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
+              fontSize: '14px',
               fontFamily: 'Alef',
-              fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'black',
               textDecoration: 'none',

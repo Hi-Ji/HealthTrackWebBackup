@@ -1,4 +1,13 @@
 {
     "Aim" : "We Aim To",
-    "ProvideSimpleToUse" : "provide a simple-to-use, aesthetic, and interactive website with vast useful knowledge and information for users, as well as raise their awarenesses of health isuues"
+    "ProvideSimpleToUse" : "provide a simple-to-use, aesthetic, and interactive website with vast useful knowledge and information for users, as well as raise their awarenesses of health isuues",
+    "Before" : "Before using HealthTrack",
+    "WeExpect" : "We expect you to have a health assessment, otherwise you might not able to use the complete services provided by our product (the report will only be used as a reference for your immediate health status)",
+    "HealthTrack" : "HealthTrack",
+    "TheHealthTrackCalc" : "The HealthTrack Calculator utilizes user-provided information, including age, lifestyle, and medical conditions, to effectively analyze relevant databases. This analysis yields real-life disease data tailored to the user's specific information. Furthermore, the Healthtrack calculator offers personalized advice on adopting healthy lifestyles.",
+    "Start" : "Get Started",
+    "StartofHealth" : "Start of Health Assessment",
+    "10" : "10 mins",
+    "Takes" : "takes about",
+    "StartItLater" : "Start It Later"
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import DiseaseBook from '../Components/AimPage/DiseaseBook.svg'
 import Text from '../data/Text.json'
+import NextButton from '../Components/ServicePage/NextButton'
 
 
 const AimPage = () => {
@@ -13,6 +14,8 @@ const AimPage = () => {
       <div style={{textAlign:'center',marginTop:'250px'}}>
         <img src={DiseaseBook} alt="DiseaseBook" className='diseaseBook' />
       </div>
+      <NextButton left='2px' top='-200px'/>
+      <div style={{padding:'70px'}}></div>
     </div>
   )
 }
