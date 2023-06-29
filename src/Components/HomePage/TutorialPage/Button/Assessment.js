@@ -1,4 +1,4 @@
-import Text from '../../../../Data/Text.json';
+import Text from '../../../../data/Text.json';
 import Caret from '../Image/Caret.svg';
 
 const Assessment = () => (
