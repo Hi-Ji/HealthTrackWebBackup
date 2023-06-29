@@ -1,8 +1,8 @@
 import React from 'react'
-import TutorialHand from '../Components/TutorialPage/Image/TutorialHandVersionTwo.svg'
-import Text from '../data/Text.json'
-import Assessment from '../Components/TutorialPage/Button/Assessment';
-import StartItLaterButton from '../Components/TutorialPage/Button/StartItLaterButton';
+import TutorialHand from '../../Components/HomePage/TutorialPage/Image/TutorialHandVersionTwo.svg'
+import Text from '../../Data/Text.json'
+import Assessment from '../../Components/HomePage/TutorialPage/Button/Assessment';
+import StartItLaterButton from '../../Components/HomePage/TutorialPage/Button/StartItLaterButton';
 
 
 const TutorialPage = () => {

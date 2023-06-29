@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-import Logo from '../Components/Navbar/Logo.svg'
-import HeadPortrait from '../Components/Navbar/HeadPortrait.png'
+import Logo from '../../Components/Navbar/Logo.svg'
+import HeadPortrait from '../../Components/Navbar/HeadPortrait.png'
 
 const pages = ['SERVICE', 'OUR AIM', 'HOW IT WORKS', 'HEALTH ASSESSMENT'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

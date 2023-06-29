@@ -1,5 +1,5 @@
-@import './Components/TutorialPage/TutorialPage.css';
-@import './Components/ServicePage/ServicePage.css';
+@import '../Components/HomePage/TutorialPage/TutorialPage.css';
+@import '../Components/HomePage/ServicePage/ServicePage.css';
 
 body {
   margin: 0 auto;

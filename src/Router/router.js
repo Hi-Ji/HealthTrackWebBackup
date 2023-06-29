@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import NavBar from "./Functions/Navbar";
+import HomePage from "../Pages/HomePage";
+import NavBar from "../Functions/NavBar/Navbar";
 
 
 const PageContentCombination = ({ pageContent }) => (
