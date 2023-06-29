@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import ServiceDoctor from '../../Components/HomePage/ServicePage/Image/ServiceDoctor.svg'
 import StartButton from '../../Components/HomePage/ServicePage/Button/StartButton';
 import NextButton from '../../Components/HomePage/ServicePage/Button/NextButton';
-import Text from '../../Data/Text.json';
+import Text from '../../data/Text.json';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',

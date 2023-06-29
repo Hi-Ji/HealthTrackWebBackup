@@ -1,4 +1,4 @@
-import Text from '../../../../Data/Text.json';
+import Text from '../../../../data/Text.json';
 
 
 const StartItLaterButton = () => (
