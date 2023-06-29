@@ -921,34 +921,34 @@
             strokeDasharray="4 4"
             stroke-dasharray="5 5"
         />
-        <text x="0" y="-65" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi, Arial, sans-serif" font-weight="bolder">
+        <text x="0" y="-65" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             OBESITY
         </text>
-        <text x="210" y="-60" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="215" y="-60" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             HEART DISEASE
         </text>
-        <text x="420" y="-25" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="410" y="-25" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             CANCER
         </text>
-        <text x="450" y="160" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="440" y="160" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             DIABETES
         </text>
-        <text x="445" y="325" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="445" y="325" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             CHRONIC
         </text>
-        <text x="446" y="350" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="446" y="350" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             DISEASES
         </text>
-        <text x="290" y="420" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="290" y="420" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             STROKE
         </text>
-        <text x="-80" y="130" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="-80" y="130" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             ASTHMA
         </text>
-        <text x="0" y="370" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="0" y="380" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             HIGH BLOOD
         </text>
-        <text x="0" y="400" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="Alatsi" font-weight="bolder">
+        <text x="0" y="410" dominant-baseline="middle" text-anchor="middle" font-size="25"  fill="#4db193" font-family="cursive" font-weight="bolder">
             PRESSURE
         </text>
     </svg>
