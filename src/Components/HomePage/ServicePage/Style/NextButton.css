@@ -1,0 +1,31 @@
+.servicePageNextButton {
+    background-color: #FDE383;
+    width: 40px;
+    padding: 25px;
+    border-radius: 100%;
+    box-shadow: 0 20px 30px -6px rgba(238, 255, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.servicePageNextButton:hover{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.servicePageNextButton:active{
+    opacity: 0.5;
+}
+
+.servicePageNextButton > img{
+    transition: all 0.3s ease-in-out;
+}
+
+.servicePageNextButton:hover > img{
+    transform: scaleX(0.8);
+    transform: scaleY(1.2);
+}
