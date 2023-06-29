@@ -1,7 +1,5 @@
 import Text from '../../../data/Text.json';
 import Caret from '../Image/Caret.svg';
-import React from 'react';
-import { Button } from '@mui/material';
 
 const Assessment = () => (
   <div className='assessmentButtonHolder'>
