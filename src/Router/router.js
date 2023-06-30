@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "../Pages/HomePage";
 import NavBar from "../Functions/NavBar/Navbar";
+import IntroPage from "../Pages/IntroPage";
 
 
 const PageContentCombination = ({ pageContent }) => (
@@ -12,8 +13,12 @@ const PageContentCombination = ({ pageContent }) => (
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <PageContentCombination pageContent={<HomePage />} />
+  },
+  {
+    path: "/intro",
+    element: <PageContentCombination pageContent={<IntroPage />}/>
   }
 ]);
 
