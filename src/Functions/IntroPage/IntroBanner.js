@@ -6,7 +6,9 @@ import HealthAssessment from "../../Components/IntroPage/Image/HealthAssessment.
 import Notification from "../../Components/IntroPage/Image/Notification.svg";
 import OurTeam from "../../Components/IntroPage/Image/OurTeam.svg"
 
+
 const IntroBanner = () => (
+
     <div className="bannerHolder">
         <div className="firstHalfSplitHolder">
             <div className="firstLeftVSplitHolder">
