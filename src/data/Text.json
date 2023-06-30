@@ -9,5 +9,15 @@
     "StartofHealth" : "Start of Health Assessment",
     "10" : "10 mins",
     "Takes" : "takes about",
-    "StartItLater" : "Start It Later"
+    "StartItLater" : "Start It Later",
+    "26June" : "26 June 2023",
+    "HowAreYou" : "How are you going today?",
+    "LifeStyle" : "Lifestyle Advices",
+    "DrugInter" : "Drug Interactions",
+    "SymptonFinder" : "Symptom Finder/Description of",
+    "SymptonFinder2" : "Symptom/Risk Evaluator",
+    "HealthAssessment" : "Health Assessment",
+    "Notification" : "Notification",
+    "OurTeam" : "Our Team"
+
 }
