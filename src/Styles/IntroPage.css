@@ -124,6 +124,7 @@
 .secondLeftVSplitHolder {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -131,10 +132,22 @@
     height: 47%;
     border-radius: 8px;
     background: #A6DADA;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.secondLeftVSplitHolder:hover{
+    border-color: #4e8184;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .firstLeftHSplitHolder {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -142,10 +155,22 @@
     gap: 1.4rem;
     background-color: #9AD5F5;
     border-radius: 8px;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.firstLeftHSplitHolder:hover{
+    border-color: #4a77ae;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .secondLeftHSplitHolder {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -153,10 +178,22 @@
     gap: 1.4rem;
     background-color: #F5AB9A;
     border-radius: 8px;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.secondLeftHSplitHolder:hover{
+    border-color: #a95b5b;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .firstRightHSplitHolder {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -164,6 +201,17 @@
     width: 80%;
     background-color: #4DB193;
     border-radius: 8px;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.firstRightHSplitHolder:hover{
+    border-color: #257127;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .secondRightHSplitHolder {
@@ -175,6 +223,7 @@
 }
 
 .firstRightVSplitHolder {
+    cursor: pointer;
     flex-direction: column-reverse;
     display: flex;
     justify-content: center;
@@ -184,9 +233,21 @@
     border-radius: 8px;
     gap: 1.4rem;
     background-color: #959FF9;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.firstRightVSplitHolder:hover{
+    border-color: #4778b1;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .secondRightVSplitHolder {
+    cursor: pointer;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -196,6 +257,17 @@
     border-radius: 8px;
     gap: 1.4rem;
     background-color: #93CEA5;
+    border: 2px solid #c3c6ce;
+    transition: 0.3s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.secondRightVSplitHolder:hover{
+    border-color: #57933b;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .notificationText {
