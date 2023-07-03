@@ -1,7 +1,7 @@
 import React from 'react'
 import NextButtonSvg from '../Image/NextButton.svg'
 
-const NextButton = ({ left, top }) => {
+const NextButton = ({ left, top, scrollFunction }) => {
   return (
     <div 
       className='servicePageNextButton'
@@ -9,7 +9,7 @@ const NextButton = ({ left, top }) => {
         marginLeft: left,
         marginTop: top
       }}
-    >
+    onClick={scrollFunction}>
       <img src={NextButtonSvg} alt="NextButtonSvg" />
     </div >
   )

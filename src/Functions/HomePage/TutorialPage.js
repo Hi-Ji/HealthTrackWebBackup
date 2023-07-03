@@ -5,10 +5,10 @@ import Assessment from '../../Components/HomePage/TutorialPage/Button/Assessment
 import StartItLaterButton from '../../Components/HomePage/TutorialPage/Button/StartItLaterButton';
 
 
-const TutorialPage = () => {
+const TutorialPage = ({tutRef}) => {
   return (
     <div style={{ margin: '0px auto 0 auto', padding: '0 60px' }}>
-      <div className='tutorialInfor'>
+      <div className='tutorialInfor' ref={tutRef}>
         <div style={{ fontSize: '35px', fontWeight: 'bold', lineHeight: "100px", fontFamily: 'Alef' }}>{Text.Before}</div>
         <div style={{ fontSize: '16px', marginTop: '30px', lineHeight: '30px', color: '#5f5f5f', fontFamily: 'Alef' }}>{Text.WeExpect}</div>
 

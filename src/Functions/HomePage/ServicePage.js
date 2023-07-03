@@ -9,6 +9,9 @@ import ServiceDoctor from '../../Components/HomePage/ServicePage/Image/ServiceDo
 import StartButton from '../../Components/HomePage/ServicePage/Button/StartButton';
 import NextButton from '../../Components/HomePage/ServicePage/Button/NextButton';
 import Text from '../../data/Text.json';
+import { useRef, useEffect } from 'react';
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,7 +21,13 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const ServicePage = () => {
+
+const ServicePage = ({aimRef}) => {
+
+  const ScrollDownToAim = () => {
+    aimRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <Box sx={{ flexGrow: 1 }}  style={{paddingTop:'130px',margin:'0 auto'}}>
       <Grid container spacing={2}>
@@ -42,7 +51,7 @@ const ServicePage = () => {
         </Grid>
 
         <div className='nextButton'>
-          <NextButton left='80px' top='60px'/>
+          <NextButton left='80px' top='60px' scrollFunction={ScrollDownToAim}/>
         </div>
         
 
