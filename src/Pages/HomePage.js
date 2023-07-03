@@ -7,15 +7,13 @@ import { useRef } from 'react'
 
 
 
-const HomePage = () => {
+const HomePage = ({serRef,aimRef,tutRef}) => {
 
-    const aimRef = useRef(null);
-    const tutRef = useRef(null);
 
     return (
 
         <div>
-            <ServicePage aimRef={aimRef}/>
+            <ServicePage aimRef={aimRef} serRef={serRef}/>
             <AimPage aimRef={aimRef} tutRef={tutRef}/>
             <TutorialPage tutRef={tutRef}/>
         </div>

@@ -17,7 +17,7 @@ import HeadPortrait from '../../Components/Navbar/HeadPortrait.png'
 const pages = ['SERVICE', 'OUR AIM', 'HOW IT WORKS', 'HEALTH ASSESSMENT'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -40,6 +40,18 @@ function ResponsiveAppBar() {
     console.log(page);
   }
 
+  const windowHeight = window.innerHeight;
+  const middlePosition = windowHeight / 0.7;
+
+  const documentHeight = Math.max(
+    document.body.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.clientHeight,
+    document.documentElement.scrollHeight,
+    document.documentElement.offsetHeight
+  );
+  const bottomPosition = documentHeight - windowHeight;
+
   return (
     <AppBar position="static" className='navbar'>
       <Container>
@@ -48,7 +60,7 @@ function ResponsiveAppBar() {
           <Typography
             noWrap
             component="a"
-            href="/"
+            href="/intro"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -92,7 +104,27 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} 
+                
+                onClick={()=>{handleCloseNavMenu();if (page === 'SERVICE') {
+                  scrollDownToSer();
+                  window.scroll({
+                    top: 0,
+                    behavior: 'smooth'
+                  });
+                  
+                } else if (page === 'OUR AIM') {
+                  scrollDownToAim();window.scroll({
+                    top: middlePosition,
+                    behavior: 'smooth'
+                  });
+                } else if (page === 'HOW IT WORKS') {
+                  scrollDownToTut();window.scroll({
+                    top: bottomPosition-250,
+                    behavior: 'smooth'
+                  });
+                }}
+                }>
                   <Typography textAlign="center" fontFamily="Alef" fontSize="11px">{page}</Typography>
                 </MenuItem>
               ))}
@@ -128,16 +160,23 @@ function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={() => {handleCloseNavMenu(); test(page)}}
-                sx={{ my: 2, display: 'block' }}
-                // className='navbarNavigation'
-                className={`${page === 'HEALTH ASSESSMENT' ? 'navbarNavigationAssessment' : 'navbarNavigation'}`}
-                
-              >
-                {page}
-                
-              </Button>
+              key={page}
+              onClick={() => {
+                handleCloseNavMenu();
+                if (page === 'SERVICE') {
+                  scrollDownToSer();
+                } else if (page === 'OUR AIM') {
+                  scrollDownToAim();
+                } else if (page === 'HOW IT WORKS') {
+                  scrollDownToTut();
+                }
+              }}
+              sx={{ my: 2, display: 'block' }}
+              className={`${page === 'HEALTH ASSESSMENT' ? 'navbarNavigationAssessment' : 'navbarNavigation'}`}
+            >
+              {page}
+            </Button>
+            
             ))}
           </Box>
           

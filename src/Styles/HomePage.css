@@ -245,6 +245,8 @@ code {
     margin-top: 50px;
     width: 300px;
     transform: scale(2);
+    position: relative;
+    z-index: -1;
   }
 }
 

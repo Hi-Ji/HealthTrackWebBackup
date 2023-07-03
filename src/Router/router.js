@@ -1,27 +1,46 @@
-import { createBrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from "../Pages/HomePage";
 import NavBar from "../Functions/NavBar/Navbar";
 import IntroPage from "../Pages/IntroPage";
+import React, { useRef } from 'react';
 
+const RouterComponent = () => {
+  const serRef = useRef(null);
+  const aimRef = useRef(null);
+  const tutRef = useRef(null);
 
-const PageContentCombination = ({ pageContent }) => (
-  <div>
-    <NavBar />
-    {pageContent}
-  </div>
-);
+  const scrollDownToSer = () => {
+    serRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
 
-const router = createBrowserRouter([
-  {
-    path: "/home",
-    element: <PageContentCombination pageContent={<HomePage />} />
-  },
-  {
-    path: "/intro",
-    element: <PageContentCombination pageContent={<IntroPage />}/>
-  }
-]);
+  const scrollDownToAim = () => {
+    aimRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
 
+  const scrollDownToTut = () => {
+    tutRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
 
-export default router;
+  return (
+    <div>
+      <Router>
+        <NavBar scrollDownToSer={scrollDownToSer} scrollDownToAim={scrollDownToAim} scrollDownToTut={scrollDownToTut} />
+        <Routes>
+          <Route path="/home" element={<HomePage serRef={serRef} aimRef={aimRef} tutRef={tutRef} />} />
+          <Route path="/intro" element={<IntroPage />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+};
 
+export default RouterComponent;

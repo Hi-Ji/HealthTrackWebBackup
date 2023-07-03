@@ -22,14 +22,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 
-const ServicePage = ({aimRef}) => {
+const ServicePage = ({aimRef,serRef}) => {
 
   const ScrollDownToAim = () => {
     aimRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}  style={{paddingTop:'130px',margin:'0 auto'}}>
+    <Box sx={{ flexGrow: 1 }}  style={{paddingTop:'130px',margin:'0 auto'}} ref={serRef}>
       <Grid container spacing={2}>
         <Grid item md={6} >
           <div className='serviceInfo' >
