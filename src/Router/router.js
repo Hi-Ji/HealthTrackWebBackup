@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from "../Pages/HomePage";
 import NavBar from "../Functions/NavBar/Navbar";
 import IntroPage from "../Pages/IntroPage";
+import SignInPage from '../Pages/SignInPage';
 import React, { useRef } from 'react';
 
 const RouterComponent = () => {
@@ -30,13 +31,21 @@ const RouterComponent = () => {
     });
   };
 
+  const NavBarCombination = ({children}) => (
+    <div>
+      <NavBar scrollDownToSer={scrollDownToSer} scrollDownToAim={scrollDownToAim} scrollDownToTut={scrollDownToTut} />
+      {children}
+    </div>
+  )
+
+
   return (
     <div>
       <Router>
-        <NavBar scrollDownToSer={scrollDownToSer} scrollDownToAim={scrollDownToAim} scrollDownToTut={scrollDownToTut} />
         <Routes>
-          <Route path="/home" element={<HomePage serRef={serRef} aimRef={aimRef} tutRef={tutRef} />} />
-          <Route path="/intro" element={<IntroPage />} />
+          <Route path="/home" element={<NavBarCombination><HomePage serRef={serRef} aimRef={aimRef} tutRef={tutRef} /></NavBarCombination>} />
+          <Route path="/intro" element={<NavBarCombination><IntroPage /></NavBarCombination>} />
+          <Route path="/signin" element={<SignInPage />} />
         </Routes>
       </Router>
     </div>

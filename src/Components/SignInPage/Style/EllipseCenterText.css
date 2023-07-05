@@ -1,0 +1,23 @@
+.ellipseCenterTextOne {
+    color: #223C40;
+    font-size: 2.85vh;
+    font-family: Gloria Hallelujah;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: rotate(-2.715deg);
+    text-align: center;
+    padding-top: 13vh;
+}
+
+.ellipseCenterTextTwo {
+    color: #223C40;
+    font-size: 2.85vh;
+    font-family: Gloria Hallelujah;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: rotate(-3.735deg);
+    text-align: center;
+    padding-top: 1vh;
+}
