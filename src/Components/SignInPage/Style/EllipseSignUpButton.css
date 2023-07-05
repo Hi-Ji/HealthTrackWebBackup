@@ -1,0 +1,24 @@
+.ellipseSignUpButtonHolder {
+    border-radius: 20px;
+    border: 0.4vh solid #FFF;
+    background: rgba(77, 177, 147, 0.00);
+    width: 20vh;
+    height: 6.1vh;
+    margin-top: 3.3vh;
+    text-align: center;
+    margin-left: 37%;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.ellipseSignUpButtonText {
+    color: #FFF;
+    font-size: 2.4vh;
+    font-family: Alef;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 7%;
+}

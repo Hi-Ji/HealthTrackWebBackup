@@ -18,6 +18,13 @@
     "SymptonFinder2" : "Symptom/Risk Evaluator",
     "HealthAssessment" : "Health Assessment",
     "Notification" : "Notification",
-    "OurTeam" : "Our Team"
+    "OurTeam" : "Our Team",
+    "New" : "New Here?",
+    "SignUp" : "sign up for an account !",
+    "SIGN" : "SIGN UP",
+    "ThisIs" : "This is more than just a Web !",
+    "HealthTracker" : "Health tracker helps you : ...",
+    "Signin" : "Sign in",
+    "Login" : "Login"
 
 }

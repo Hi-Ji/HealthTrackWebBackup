@@ -1,0 +1,11 @@
+.ellipse{
+    width: 239%;
+    height: 226.5vh;
+    flex-shrink: 0;
+    border-radius: 139rem;
+    background: rgba(77, 177, 147, 0.30);
+    overflow: hidden;
+    margin-left: -140%;
+    margin-top: -130%;
+    z-index: 1;
+}

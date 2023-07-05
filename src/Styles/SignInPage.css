@@ -1,0 +1,106 @@
+@import "../Components/SignInPage/SignInPage.css";
+
+.pageSpliter {
+    display: flex;
+}
+
+.ellipsePage {
+    display: flex;
+    flex: 757;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signInPage {
+    display: flex;
+    flex-direction: column;
+    flex: 755;
+}
+
+.ellipsePageContent {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0%;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+}
+
+
+.signUpText {
+    padding-top: 2vh;
+    text-align: center;
+    color: #FFF;
+    font-size: 2.4vh;
+    font-family: Alef;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.newHereText {
+    text-align: center;
+    color: #FFF;
+    font-size: 4.1vh;
+    font-family: Alef;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.ellipseLeftImg {
+    height: 24.4vh;
+    width: 14.2vh;
+    padding-left: 9.7vh;
+    padding-top: 8vh;
+}
+
+.ellipseRightImg {
+    position: absolute;
+    height: 23.6vh;
+    width: 24.2vh;
+    padding-left: 35vh;
+    padding-top: 68.43vh;
+}
+
+.signInText {
+    color: #223C40;
+    font-size: 5.3vh;
+    font-family: Alef;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 23.6vh;
+}
+
+.hLine {
+    margin-top: 8%;
+    width: 61vh;
+    height: 1px;
+    background: #223C40;
+    flex-shrink: 0;
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconHolder{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gmail{
+    width: 7vh;
+    height: 7vh;
+}
+
+.facebook{
+    width: 7vh;
+    height: 7vh;
+}
