@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 import Logo from '../../Components/Navbar/Logo.svg'
 import HeadPortrait from '../../Components/Navbar/HeadPortrait.png'
+import { useNavigate } from "react-router-dom";
 
 const pages = ['SERVICE', 'OUR AIM', 'HOW IT WORKS', 'HEALTH ASSESSMENT'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,12 +37,14 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
     setAnchorElUser(null);
   };
 
-  const test = (page) => {
-    console.log(page);
+  const navigate = useNavigate();
+  const navigate_page = () => {
+    navigate('/home');
   }
 
+
   const windowHeight = window.innerHeight;
-  const middlePosition = windowHeight / 0.7;
+  const middlePosition = (windowHeight-20) / 0.7;
 
   const documentHeight = Math.max(
     document.body.scrollHeight,
@@ -50,7 +53,7 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
     document.documentElement.scrollHeight,
     document.documentElement.offsetHeight
   );
-  const bottomPosition = documentHeight - windowHeight;
+  const bottomPosition = middlePosition*2;
 
   return (
     <AppBar position="static" className='navbar'>
@@ -106,7 +109,7 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
               {pages.map((page) => (
                 <MenuItem key={page} 
                 
-                onClick={()=>{handleCloseNavMenu();if (page === 'SERVICE') {
+                onClick={()=>{handleCloseNavMenu();navigate_page();setTimeout(()=>{if (page === 'SERVICE') {
                   scrollDownToSer();
                   window.scroll({
                     top: 0,
@@ -120,10 +123,10 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
                   });
                 } else if (page === 'HOW IT WORKS') {
                   scrollDownToTut();window.scroll({
-                    top: bottomPosition-250,
+                    top: bottomPosition,
                     behavior: 'smooth'
                   });
-                }}
+                }}, 50);}
                 }>
                   <Typography textAlign="center" fontFamily="Alef" fontSize="11px">{page}</Typography>
                 </MenuItem>
@@ -162,14 +165,13 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
               <Button
               key={page}
               onClick={() => {
-                handleCloseNavMenu();
-                if (page === 'SERVICE') {
+                handleCloseNavMenu();navigate_page();setTimeout(()=>{if (page === 'SERVICE') {
                   scrollDownToSer();
                 } else if (page === 'OUR AIM') {
                   scrollDownToAim();
                 } else if (page === 'HOW IT WORKS') {
                   scrollDownToTut();
-                }
+                }},50);
               }}
               sx={{ my: 2, display: 'block' }}
               className={`${page === 'HEALTH ASSESSMENT' ? 'navbarNavigationAssessment' : 'navbarNavigation'}`}
