@@ -4,23 +4,31 @@ import EllipseSignUpButton from "../../Components/SignInPage/Button/EllipseSignU
 import EllipseCenterText from "../../Components/SignInPage/Text/EllipseCenterText";
 import EllipseLeft from "../../Components/SignInPage/Image/ellipseLeft.svg";
 import EllipseRight from '../../Components/SignInPage/Image/ellipseRight.svg';
+import React, { useState } from 'react';
 
-const EllipseInfo = () => (
-    <div className="ellipsePage">
-        <Ellipse />
-        <div className="ellipsePageContent">`
-            <div className="newHereText">
-                {Text.New}
+
+
+
+const EllipseInfo = () => {
+
+
+    return (
+        <div className="ellipsePage">
+            <Ellipse />
+            <div className="ellipsePageContent">`
+                <div className="newHereText">
+                    {Text.New}
+                </div>
+                <div className="signUpText">
+                    {Text.SignUp}
+                </div>
+                <EllipseSignUpButton />
+                <EllipseCenterText />
+                <img src={EllipseLeft} className="ellipseLeftImg" />
+                <img src={EllipseRight} className="ellipseRightImg" />
             </div>
-            <div className="signUpText">
-                {Text.SignUp}
-            </div>
-            <EllipseSignUpButton />
-            <EllipseCenterText />
-            <img src={EllipseLeft} className="ellipseLeftImg"/>
-            <img src={EllipseRight} className="ellipseRightImg"/>
         </div>
-    </div>
-)
+    )
+}
 
 export default EllipseInfo;

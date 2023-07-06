@@ -1,11 +1,14 @@
 import Text from "../../../data/Text.json";
 
-const EllipseSignUpButton = () => (
-    <div className="ellipseSignUpButtonHolder">
-        <div className="ellipseSignUpButtonText">
-            {Text.SIGN}
+const EllipseSignUpButton = () => {
+
+    return (
+        <div className="ellipseSignUpButtonHolder">
+            <div className="ellipseSignUpButtonText">
+                {Text.SIGN}
+            </div>
         </div>
-    </div>
-)
+    )
+}
 
 export default EllipseSignUpButton;
