@@ -1,5 +1,6 @@
 @import "../Components/SignInPage/SignInPage.css";
 
+
 .pageSpliter {
     display: flex;
 }
@@ -60,8 +61,8 @@
     position: absolute;
     height: 23.6vh;
     width: 24.2vh;
-    padding-left: 35vh;
-    padding-top: 68.43vh;
+    margin-left: 35vh;
+    margin-top: 68.43vh;
 }
 
 .signInText {
@@ -98,9 +99,21 @@
 .gmail{
     width: 7vh;
     height: 7vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.gmail:hover{
+    scale: 0.9;
 }
 
 .facebook{
     width: 7vh;
     height: 7vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.facebook:hover{
+    scale: 0.9;
 }
