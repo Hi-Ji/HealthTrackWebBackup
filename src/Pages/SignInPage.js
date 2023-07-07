@@ -2,10 +2,10 @@ import EllipseInfo from "../Functions/SignInPage/EllipseInfo";
 import SignIn from "../Functions/SignInPage/SignIn";
 import "../Styles/SignInPage.css";
 
-const SignInPage = () => (
+const SignInPage = ({isSignIn}) => (
     <div className="pageSpliter">
-        <EllipseInfo />
-        <SignIn />
+        <EllipseInfo isSignIn={isSignIn}/>
+        <SignIn isSignIn={isSignIn}/>
     </div>
 )
 

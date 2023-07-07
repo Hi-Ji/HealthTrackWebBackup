@@ -5,11 +5,12 @@ import EllipseCenterText from "../../Components/SignInPage/Text/EllipseCenterTex
 import EllipseLeft from "../../Components/SignInPage/Image/ellipseLeft.svg";
 import EllipseRight from '../../Components/SignInPage/Image/ellipseRight.svg';
 import React, { useState } from 'react';
+import SignUp from "../../Components/SignInPage/Image/signUp.svg";
 
 
 
 
-const EllipseInfo = () => {
+const EllipseInfo = ({ isSignIn }) => {
 
 
     return (
@@ -17,15 +18,24 @@ const EllipseInfo = () => {
             <Ellipse />
             <div className="ellipsePageContent">`
                 <div className="newHereText">
-                    {Text.New}
+                    {isSignIn ? Text.New : Text.One}
                 </div>
                 <div className="signUpText">
-                    {Text.SignUp}
+                    {isSignIn ? Text.SignUp : Text.GoBack}
                 </div>
                 <EllipseSignUpButton />
                 <EllipseCenterText />
-                <img src={EllipseLeft} className="ellipseLeftImg" />
-                <img src={EllipseRight} className="ellipseRightImg" />
+                {isSignIn ? (
+                    <>
+                        <img src={EllipseLeft} className="ellipseLeftImg" />
+                        <img src={EllipseRight} className="ellipseRightImg" />
+                    </>
+                ) : (
+                    <>
+                        <img src={SignUp} className="signUpImg"/>
+                    </>)
+                }
+
             </div>
         </div>
     )

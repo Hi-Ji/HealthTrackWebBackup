@@ -45,7 +45,8 @@ const RouterComponent = () => {
         <Routes>
           <Route path="/home" element={<NavBarCombination><HomePage serRef={serRef} aimRef={aimRef} tutRef={tutRef} /></NavBarCombination>} />
           <Route path="/intro" element={<NavBarCombination><IntroPage /></NavBarCombination>} />
-          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/signin" element={<SignInPage isSignIn={true} />} />
+          <Route path='/signup' element={<SignInPage isSignIn={false} />} />
         </Routes>
       </Router>
     </div>
