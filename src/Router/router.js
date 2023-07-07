@@ -3,6 +3,7 @@ import HomePage from "../Pages/HomePage";
 import NavBar from "../Functions/NavBar/Navbar";
 import IntroPage from "../Pages/IntroPage";
 import SignInPage from '../Pages/SignInPage';
+import SignUpPage from '../Pages/SignUpPage';
 import React, { useRef } from 'react';
 
 const RouterComponent = () => {
@@ -46,6 +47,7 @@ const RouterComponent = () => {
           <Route path="/home" element={<NavBarCombination><HomePage serRef={serRef} aimRef={aimRef} tutRef={tutRef} /></NavBarCombination>} />
           <Route path="/intro" element={<NavBarCombination><IntroPage /></NavBarCombination>} />
           <Route path="/signin" element={<SignInPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </Router>
     </div>

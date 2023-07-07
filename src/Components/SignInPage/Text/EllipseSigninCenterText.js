@@ -1,15 +1,15 @@
 import Text from "../../../data/Text.json";
 
 
-const EllipseCenterText = () => (
+const EllipseSigninCenterText = () => (
     <div>
         <div className="ellipseCenterTextOne">
             {Text.ThisIs}
         </div>
         <div className="ellipseCenterTextTwo">
-            {Text.HealthTracker}
+            {Text.SigninHealthTracker}
         </div>
     </div>
 )
 
-export default EllipseCenterText;
+export default EllipseSigninCenterText;

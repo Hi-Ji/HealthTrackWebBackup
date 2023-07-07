@@ -19,13 +19,18 @@
     "HealthAssessment" : "Health Assessment",
     "Notification" : "Notification",
     "OurTeam" : "Our Team",
-    "New" : "New Here?",
+    "SigninNew" : "New Here?",
     "SignUp" : "sign up for an account !",
-    "SIGN" : "SIGN UP",
+    "SIGNUP" : "SIGN UP",
+    "SignupNew" : "One of us?",
+    "SignIn" : "Go back and login !",
+    "SIGNIN" : "SIGN IN",
     "ThisIs" : "This is more than just a Web !",
-    "HealthTracker" : "Health tracker helps you : ...",
+    "SigninHealthTracker" : "Health tracker helps you : ...",
+    "SignupHealthTracker" : "Join us and find out yourself :)",
     "Signin" : "Sign in",
     "Login" : "Login",
-    "LoginBack" : "Back"
+    "LoginBack" : "Back",
+    "Signup" : "Sign up"
 
 }

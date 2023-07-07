@@ -1,7 +1,7 @@
 import Ellipse from "../../Components/SignInPage/Shape/Ellipse";
 import Text from "../../data/Text.json";
 import EllipseSignUpButton from "../../Components/SignInPage/Button/EllipseSignUpButton";
-import EllipseCenterText from "../../Components/SignInPage/Text/EllipseCenterText";
+import EllipseSigninCenterText from "../../Components/SignInPage/Text/EllipseSigninCenterText";
 import EllipseLeft from "../../Components/SignInPage/Image/ellipseLeft.svg";
 import EllipseRight from '../../Components/SignInPage/Image/ellipseRight.svg';
 import React, { useState } from 'react';
@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 
 
 
-const EllipseInfo = () => {
+const SignInEllipseInfo = () => {
 
 
     return (
@@ -17,13 +17,13 @@ const EllipseInfo = () => {
             <Ellipse />
             <div className="ellipsePageContent">`
                 <div className="newHereText">
-                    {Text.New}
+                    {Text.SigninNew}
                 </div>
                 <div className="signUpText">
-                    {Text.SignUp}
+                    {Text.SignIn}
                 </div>
                 <EllipseSignUpButton />
-                <EllipseCenterText />
+                <EllipseSigninCenterText />
                 <img src={EllipseLeft} className="ellipseLeftImg" />
                 <img src={EllipseRight} className="ellipseRightImg" />
             </div>
@@ -31,4 +31,4 @@ const EllipseInfo = () => {
     )
 }
 
-export default EllipseInfo;
+export default SignInEllipseInfo;

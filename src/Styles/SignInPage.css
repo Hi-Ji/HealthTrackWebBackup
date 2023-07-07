@@ -65,6 +65,14 @@
     margin-top: 68.43vh;
 }
 
+.ellipseCenterImg {
+    position: absolute;
+
+    width: 30.2vh;
+    margin-left: 25vh;
+    margin-top: 55.43vh;
+}
+
 .signInText {
     color: #223C40;
     font-size: 5.3vh;
@@ -75,6 +83,19 @@
     text-align: center;
     padding-top: 23.6vh;
 }
+
+.signUpText1 {
+    color: #223C40;
+    font-size: 5.3vh;
+    font-family: Alef;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 15.6vh;
+}
+
+
 
 .hLine {
     margin-top: 8%;
