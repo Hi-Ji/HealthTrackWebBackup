@@ -25,6 +25,7 @@
     "ThisIs" : "This is more than just a Web !",
     "HealthTracker" : "Health tracker helps you : ...",
     "Signin" : "Sign in",
-    "Login" : "Login"
+    "Login" : "Login",
+    "LoginBack" : "Back"
 
 }

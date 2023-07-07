@@ -117,3 +117,14 @@
 .facebook:hover{
     scale: 0.9;
 }
+
+.signinButton{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.signinButtonEach{
+    display: inline-block;
+    width: 49%;
+    max-width: 230px;
+}

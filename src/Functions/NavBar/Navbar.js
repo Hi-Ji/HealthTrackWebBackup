@@ -16,7 +16,6 @@ import HeadPortrait from '../../Components/Navbar/HeadPortrait.png'
 import { useNavigate } from "react-router-dom";
 
 const pages = ['SERVICE', 'OUR AIM', 'HOW IT WORKS', 'HEALTH ASSESSMENT'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,8 +37,12 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
   };
 
   const navigate = useNavigate();
-  const navigate_page = () => {
+  const navigate_home_page = () => {
     navigate('/home');
+  }
+
+  const navigate_signin_page = () => {
+    navigate('/signin');
   }
 
 
@@ -109,7 +112,7 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
               {pages.map((page) => (
                 <MenuItem key={page} 
                 
-                onClick={()=>{handleCloseNavMenu();navigate_page();setTimeout(()=>{if (page === 'SERVICE') {
+                onClick={()=>{handleCloseNavMenu();navigate_home_page();setTimeout(()=>{if (page === 'SERVICE') {
                   scrollDownToSer();
                   window.scroll({
                     top: 0,
@@ -165,7 +168,7 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
               <Button
               key={page}
               onClick={() => {
-                handleCloseNavMenu();navigate_page();setTimeout(()=>{if (page === 'SERVICE') {
+                handleCloseNavMenu();navigate_home_page();setTimeout(()=>{if (page === 'SERVICE') {
                   scrollDownToSer();
                 } else if (page === 'OUR AIM') {
                   scrollDownToAim();
@@ -183,34 +186,13 @@ function ResponsiveAppBar({scrollDownToSer,scrollDownToAim,scrollDownToTut}) {
           </Box>
           
           {/* HeadPortrait */}
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+          <Box sx={{ flexGrow: 0 }} onClick={navigate_signin_page}>
+            <Tooltip title="Sign in">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
               <img src={HeadPortrait}/>
               </IconButton>
             </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            
           </Box>
         </Toolbar>
       </Container>
