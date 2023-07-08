@@ -1,6 +1,6 @@
 @keyframes rollFrom {
     from {
-        margin-left: -200%;
+        margin-left: -250%;
     }
 
     to {
@@ -19,7 +19,7 @@
     margin-left: -140%;
     margin-top: -130%;
     z-index: 1;
-    animation: rollFrom 1.5s ease-in;
+    animation: rollFrom 2s ease-out;
 }
 
 
