@@ -1,59 +1,5 @@
 @import "../Components/IntroPage/IntroPageStyles.css";
 
-@media (max-width: 2600px) {
-    html {
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 2400px) {
-    html {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 2200px) {
-    html {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 2000px) {
-    html {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1800px) {
-    html {
-        font-size: 18px;
-    }
-}
-
-/* standard design scale */
-@media (max-width: 1600px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 1400px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 1200px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 1000px) {
-    html {
-        font-size: 10px;
-    }
-}
 
 
 
