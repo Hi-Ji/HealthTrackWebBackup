@@ -1,0 +1,65 @@
+.ellipseLayer {
+    border-radius: 283%;
+    background: rgba(77, 177, 147, 0.30);
+    height: 129%;
+    width: 183.5%;
+    right: 45.6%;
+    top: -78%;
+    position: absolute;
+    z-index: -3;
+}
+
+.ellipseTitleText {
+    color: #4DB294;
+    font-family: Alef;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    bottom: 26%;
+    right: 18%;
+    position: absolute;
+    z-index: -2;
+}
+
+.ellipseContentText {
+    color: #223C40;
+    font-family: Alef;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    position: absolute;
+    bottom: 20%;
+    right: 17%;
+
+    
+}
+.ellipseContentText2{
+    color: #223C40;
+    font-family: Alef;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    position: absolute;
+    bottom: 17.5%;
+    right: 17%;
+    white-space: nowrap;
+    text-indent: 7%;
+}
+
+.container {
+    display: flex;
+    padding-top: 5%;
+    width: 100%;
+    height: 628%;
+}
+
+.lineImg{
+    width: 19.37rem;
+    height: 205.6rem;
+    left: 25%;
+    z-index: -1;
+    position: absolute;
+}
