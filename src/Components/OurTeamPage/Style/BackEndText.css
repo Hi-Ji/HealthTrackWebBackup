@@ -1,0 +1,36 @@
+.backEndTextHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.backEndTextTitle {
+    color: #9790FF;
+    font-family: Alef;
+    font-size: 2.4vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 2.4vh;
+}
+
+.backEndTextContent {
+    color: #223C40;
+    font-family: Nanum Pen Script;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1px;
+}
+
+.descriptionText {
+    color: #223C40;
+    font-family: Alef;
+    font-size: 1.2vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 14.5vw;
+    margin-top: 15vh;
+    margin-left: 1vw;
+}
