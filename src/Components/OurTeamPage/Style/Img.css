@@ -1,11 +1,31 @@
 .firstImg{
-    height: 23vh;
+    /* height: 23vh; */
+    width: 20.9vw;
     margin-top: 7.9vh;
     margin-left: 71vw;
 }
 
 .secondImg{
-    height: 17.4vh;
+    /* height: 17.4vh; */
     width: 15.5vw;
     margin-left: 4vw;
+}
+
+.thirdImg{
+    width: 10.4vw;
+}
+
+.fourthImg{
+    width: 13.7vw;
+    padding-left: 3.3vw;
+}
+
+.fifthImg{
+    width: 17.7vw;
+    padding-left: 5vw;
+}
+
+.sixthImg{
+    width: 11.3vw;
+    padding-left: 4.3vw;
 }

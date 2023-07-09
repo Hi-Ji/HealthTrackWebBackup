@@ -36,6 +36,14 @@
     "Harness" : "Harnessed for productivity.",
     "Designed" : " Designed for collaboration...",
     "Introducing" : "Introducing Back-end Developer",
-    "BackendDes" : "They helps creating, maintaining, testing, and debugging the entire back end of an application or system, giving the functionality for the data access layer..."
+    "BackendDes" : "They helps creating, maintaining, testing, and debugging the entire back end of an application or system, giving the functionality for the data access layer...",
+    "IntroducingFullStack" : "Introducing Full Stack Developer",
+    "TheyCan" : "They can build both the front end and the back end of the website...",
+    "IntroducingFrontEnd" : "Introducing Front-end Developers",
+    "ThisIsWhere" : "This is where the visual elements are implemented. They are resposible for the layer which users see and interact with in this website",
+    "IntroducingRes" : "Introducing Researchers",
+    "Research" : "Research involves the collection, organization and analysis of evidence to increase understanding of the related topics in the website...",
+    "IntroducingAl" : "Introducing Algorithm Developers ",
+    "ACollection" : "a collection of algorithms that interpret signals from webpages (e.g., keywords, links, etc.), with the goal of ranking the content that best answers a search query cannot go any further..."
 
 }

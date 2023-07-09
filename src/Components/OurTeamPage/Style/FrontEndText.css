@@ -1,0 +1,64 @@
+.frontEndTitleHolder {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.76vw;
+}
+
+
+.frontEndTitleTitle {
+    color: #088F8F;
+    font-family: Alef;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.frontEndTitleContent {
+    padding-top: 1.1vh;
+    color: #223C40;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.frontEndContentHolder {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.6vh;
+}
+
+
+.frontEndContentTitle {
+    color: rgba(0, 163, 0, 0.50);
+    font-family: Alef;
+    font-size: 1.56vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 2.4vh;
+}
+
+.frontEndContentContent {
+    color: #223C40;
+    font-family: Nanum Pen Script;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.1vh;
+}
+
+.frontEndDescription {
+    margin-left: 2.3vw;
+    color: #223C40;
+    font-family: Alef;
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding-top: 17.8vh;
+    width: 17vw;
+}

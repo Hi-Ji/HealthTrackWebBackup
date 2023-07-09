@@ -1,10 +1,10 @@
-.backEndTextHolder {
+.algorithmTextHolder {
     display: flex;
     flex-direction: column;
 }
 
-.backEndTextTitle {
-    color: #9790FF;
+.algorithmTitleText {
+    color: rgba(236, 99, 61, 0.80);
     font-family: Alef;
     font-size: 1.6vw;
     font-style: normal;
@@ -13,7 +13,7 @@
     padding-bottom: 2.4vh;
 }
 
-.backEndTextContent {
+.algorithmContentText {
     color: #223C40;
     font-family: Nanum Pen Script;
     font-size: 1.3vw;
@@ -23,14 +23,14 @@
     padding: 0.1vh;
 }
 
-.descriptionText {
+.algorithmDescription {
     color: #223C40;
     font-family: Alef;
-    font-size: 0.8vw;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    width: 15.5vw;
-    margin-top: 15vh;
-    margin-left: 1vw;
+    line-height: 140%;
+    width: 17vw;
+    padding-left: 2.9vw;
+    margin-top: 15.5vh;
 }
