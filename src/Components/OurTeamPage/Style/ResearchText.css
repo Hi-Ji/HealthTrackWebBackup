@@ -1,19 +1,19 @@
-.backEndTextHolder {
+.researchTextHolder {
     display: flex;
     flex-direction: column;
 }
 
-.backEndTextTitle {
-    color: #9790FF;
+.researchTitleText {
+    color: #00D200;
     font-family: Alef;
-    font-size: 1.6vw;
+    font-size: 1.58vw;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    padding-bottom: 2.4vh;
+    padding-bottom: 2.44vh;
 }
 
-.backEndTextContent {
+.researchContentText {
     color: #223C40;
     font-family: Nanum Pen Script;
     font-size: 1.3vw;
@@ -23,14 +23,14 @@
     padding: 0.1vh;
 }
 
-.descriptionText {
+.researchDescription {
     color: #223C40;
+    width: 17vw;
     font-family: Alef;
     font-size: 0.8vw;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    width: 15.5vw;
-    margin-top: 15vh;
-    margin-left: 1vw;
+    line-height: 140%;
+    margin-left: 3vw;
+    margin-top: 15.5vh;
 }
