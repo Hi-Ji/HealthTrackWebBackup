@@ -1,7 +1,5 @@
 import RiskCard from '../../Components/RiskEvaluatorPage/Card/RiskCard'
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import RiskEvalu from '../../data/RiskEvalu.json'
 import Img1 from '../../Components/RiskEvaluatorPage/Img/Img1.svg'
@@ -17,45 +15,67 @@ import Img9 from '../../Components/RiskEvaluatorPage/Img/Img9.svg'
 
 
 export default function RiskCards() {
-
+  const test2=()=>{
+    console.log('111')
+  }
   return (
     <div className='totolCards'>
       <Grid container spacing={3}>
         <Grid item md={1} className='displayNone' >
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2} >
-          <RiskCard title={RiskEvalu.Symptoms1.title} lineStart={RiskEvalu.Symptoms1.lineStart} lineEnd={RiskEvalu.Symptoms1.lineEnd} img={Img1} />
+          {/* <div> */}
+            <RiskCard Symptoms={RiskEvalu.Symptoms1} img={Img1} />
+          {/* </div> */}
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms2.title} lineStart={RiskEvalu.Symptoms2.lineStart} lineEnd={RiskEvalu.Symptoms2.lineEnd} img={Img2} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms2}  img={Img2} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms3.title} lineStart={RiskEvalu.Symptoms3.lineStart} lineEnd={RiskEvalu.Symptoms3.lineEnd} img={Img3} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms3} img={Img3} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms4.title} lineStart={RiskEvalu.Symptoms4.lineStart} lineEnd={RiskEvalu.Symptoms4.lineEnd} img={Img4} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms4} img={Img4} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms5.title} lineStart={RiskEvalu.Symptoms5.lineStart} lineEnd={RiskEvalu.Symptoms5.lineEnd} img={Img5} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms5} img={Img5} />
+          </div>
         </Grid>
         <Grid item md={1} className='displayNone' >
         </Grid>
         <Grid item md={1} className='displayNone' >
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2} >
-          <RiskCard title={RiskEvalu.Symptoms6.title} lineStart={RiskEvalu.Symptoms6.lineStart} lineEnd={RiskEvalu.Symptoms6.lineEnd} img={Img6} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms6}  img={Img6} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms7.title} lineStart={RiskEvalu.Symptoms7.lineStart} lineEnd={RiskEvalu.Symptoms7.lineEnd} img={Img7} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms7} img={Img7} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms8.title} lineStart={RiskEvalu.Symptoms8.lineStart} lineEnd={RiskEvalu.Symptoms8.lineEnd} img={Img8} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms8}  img={Img8} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms9.title} lineStart={RiskEvalu.Symptoms9.lineStart} lineEnd={RiskEvalu.Symptoms9.lineEnd} img={Img9} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms9}  img={Img9} />
+          </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3} lg={2}>
-          <RiskCard title={RiskEvalu.Symptoms10.title} lineStart={RiskEvalu.Symptoms10.lineStart} lineEnd={RiskEvalu.Symptoms10.lineEnd} img={Img10} />
+          <div>
+            <RiskCard Symptoms={RiskEvalu.Symptoms10} img={Img10} />
+          </div>
         </Grid>
         <Grid item md={1} className='displayNone' >
         </Grid>

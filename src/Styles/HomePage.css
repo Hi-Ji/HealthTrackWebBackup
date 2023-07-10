@@ -130,7 +130,7 @@ code {
 .navbar{
   position: fixed!important;
   margin-bottom: 100px!important;
-  z-index: 10px;
+  z-index: 10;
 }
 
 

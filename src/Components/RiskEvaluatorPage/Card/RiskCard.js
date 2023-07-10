@@ -5,28 +5,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const RiskCard = ( {title, lineStart, lineEnd, img} ) => {
+const RiskCard = ( {Symptoms, img} ) => {
   const test2=()=>{
-    console.log(lineStart)
+    console.log(Symptoms.id)
   }
   return (
-    <Card className='card'>
+    <Card className='card' onClick={test2}>
       <CardActionArea>
         <CardContent className='cardTitle'>
           <Typography gutterBottom variant="h7" component="div">
-            {title}
+            {Symptoms.title}
           </Typography>
 
         </CardContent>
-        {/* <CardMedia
-          component="img"
-          height="330"
-          image={Img1}
-          alt="Img1"
-        /> */}
         <img src={img} alt="Img1" className='cardImg1' />
         
-        <div className='bottomLine' style={{ background: `linear-gradient(90deg, ${lineStart} 0%, ${lineEnd} 127.46%)` }}></div>
+        <div className='bottomLine' style={{ background: `linear-gradient(90deg, ${Symptoms.lineStart} 0%, ${Symptoms.lineEnd} 127.46%)` }}></div>
 
       </CardActionArea>
     </Card>
