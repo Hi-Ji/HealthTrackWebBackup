@@ -5,6 +5,7 @@ import IntroPage from "../Pages/IntroPage";
 import SignInPage from '../Pages/SignInPage';
 import SignUpPage from '../Pages/SignUpPage';
 import OurTeamPage from '../Pages/OurTeamPage';
+import RiskEvaluatorPage from '../Pages/RiskEvaluatorPage';
 import React, { useRef } from 'react';
 
 const RouterComponent = () => {
@@ -50,6 +51,7 @@ const RouterComponent = () => {
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path='/ourteam' element={<NavBarCombination><OurTeamPage /></NavBarCombination>} />
+          <Route path='/riskevaluator' element={<NavBarCombination><RiskEvaluatorPage /></NavBarCombination>} />
         </Routes>
       </Router>
     </div>

@@ -5,10 +5,18 @@ import SymptonFinder from "../../Components/IntroPage/Image/SymptomFinder.svg";
 import HealthAssessment from "../../Components/IntroPage/Image/HealthAssessment.svg";
 import Notification from "../../Components/IntroPage/Image/Notification.svg";
 import OurTeam from "../../Components/IntroPage/Image/OurTeam.svg"
+import { useNavigate } from "react-router-dom";
 
 
-const IntroBanner = () => (
-
+const IntroBanner = () => {
+    const navigate = useNavigate();
+    const navigate_riskevaluator_page = () => {
+      navigate('/riskevaluator');
+    }
+    const navigate_ourteam_page = () => {
+        navigate('/ourteam');
+      }
+  return (
     <div className="bannerHolder">
         <div className="firstHalfSplitHolder">
             <div className="firstLeftVSplitHolder">
@@ -27,7 +35,7 @@ const IntroBanner = () => (
                     <div style={{height:"1rem"}}></div>
                 </div>
             </div>
-            <div className="secondLeftVSplitHolder">
+            <div className="secondLeftVSplitHolder" onClick={navigate_riskevaluator_page}>
                 <div className="symptomFinderText">
                     {Text.SymptonFinder}<br/>
                     {Text.SymptonFinder2}
@@ -50,7 +58,7 @@ const IntroBanner = () => (
                     </div>
                     <img src={Notification} className="notificationImg"/>
                 </div>
-                <div className="secondRightVSplitHolder">
+                <div className="secondRightVSplitHolder" onClick={navigate_ourteam_page}>
                     <div className="ourTeamText">
                         {Text.OurTeam}
                     </div>
@@ -59,6 +67,7 @@ const IntroBanner = () => (
             </div>
         </div>
     </div>
-)
+  )
+}
 
-export default IntroBanner;
+export default IntroBanner
