@@ -33,7 +33,7 @@
     "title":"URINARY SYMPTOMS",
     "lineStart":"#96D7C6",
     "lineEnd":"#5AA7A7",
-    "detail":["● DARK URINE (尿液变深色)","●YELLOW URINE (尿液变黄)","●FOUL SMELL OF URINE (尿液发臭)","●CONTINUOUS FEEL OF URINE (持续尿意)","●POLYURIA (多尿)"]
+    "detail":["● DARK URINE (尿液变深色)","● YELLOW URINE (尿液变黄)","● FOUL SMELL OF URINE (尿液发臭)","● CONTINUOUS FEEL OF URINE (持续尿意)","● POLYURIA (多尿)"]
   },
   "Symptoms6":{
     "id":6,
@@ -54,8 +54,7 @@
     "title":"GASTROINTESTINAL SYMPTOMS",
     "lineStart":"#C8EAD1",
     "lineEnd":"#A8E0B7",
-    "detail":["","","","",""],
-    "D":[
+    "detail":[
       "● BELLY PAIN (腹痛)","● ABNORMAL MENSTRUATION (月经异常)","● DISTENTION OF ABDOMEN (腹胀)","● STOMACH BLEEDING (胃出血)","● HISTORY OF ALCOHOL CONSUMPTION (饮酒史)"
     ]
   },
