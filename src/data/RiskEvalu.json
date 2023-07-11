@@ -3,60 +3,74 @@
     "id":1,
     "title":"SKIN-RELATED SYMPTOMS",
     "lineStart":"#5AA7A7",
-    "lineEnd":"#96D7C6"
+    "lineEnd":"#96D7C6",
+    "detail":["● OITCHING (瘙痒)","● SKIN RASH (皮疹)","● NODAL SKIN ERUPTIONS (皮肤结节)"]
   },
   "Symptoms2":{
     "id":2,
     "title":"RESPIRATORY SYMPTOMS",
     "lineStart":"#96D7C6",
-    "lineEnd":"#BAC94A"
+    "lineEnd":"#BAC94A",
+    "detail":["● CONTINUOUS SNEEZING (持续打喷嚏) ","● COUGH (咳嗽) ","● PHLEGM (痰) ","● THROAT IRRITATION (喉咙刺激) ","● REDNESS OF EYES (眼红) ","● SINUS PRESSURE (鼻窦压力) ","● RUNNY NOSE (流鼻涕) ","● CONGESTION (鼻塞) ","● BREATHLESSNESS (呼吸困难)"]
   },
   "Symptoms3":{
     "id":3,
     "title":"DIGESTIVE SYMPTOMS",
     "lineStart":"#BAC94A",
-    "lineEnd":"#EAEF9D"
+    "lineEnd":"#EAEF9D",
+    "detail":["● STOMACH PAIN (胃痛)","● ACIDITY (胃酸过多)","● ULCERS ON TONGUE (舌溃疡)","● VOMITING (呕吐)","● BURNING MICTURITION (尿液灼烧感)","● SPOTTING URINATION (尿液有斑点)","● INDIGESTION (消化不良)","● DIARRHEA (腹泻)","● CONSTIPATION (便秘)","● ABDOMINAL PAIN (腹痛)","● NAUSEA (恶心)","● LOSS OF APPETITE (食欲不振)","● PAINFUL BOWEL MOVEMENTS (排便疼痛)","● IRRITATION IN ANUS (肛门瘙痒)","● BLOOD IN STOOL (大便带血)"]
+    
   },
   "Symptoms4":{
     "id":4,
     "title":"GENERAL SYMPTOMS",
     "lineStart":"#EAEF9D",
-    "lineEnd":"#96D7C6"
+    "lineEnd":"#96D7C6",
+    "detail":["● FATIGUE (疲劳)","● WEIGHT GAIN (体重增加)","● ANXIETY (焦虑)","● COLD HANDS AND FEET (手脚冰冷)","● MOOD SWINGS (情绪波动)","● WEIGHT LOSS (体重减轻)","● RESTLESSNESS (不安)","● LETHARGY (倦怠)","● FEVER (发烧)","● SWEATING (出汗)","● DEHYDRATION (脱水)","● MALAISE (不适感)","● DIZZINESS (头晕)","● WEAKNESS (虚弱感)","● DEPRESSION (抑郁)","● IRRITABILITY (易怒)","● LACK OF CONCENTRATION (注意力不集中)","● VISUAL DISTURBANCES (视觉障碍)"]
   },
   "Symptoms5":{
     "id":5,
     "title":"URINARY SYMPTOMS",
     "lineStart":"#96D7C6",
-    "lineEnd":"#5AA7A7"
+    "lineEnd":"#5AA7A7",
+    "detail":["● DARK URINE (尿液变深色)","●YELLOW URINE (尿液变黄)","●FOUL SMELL OF URINE (尿液发臭)","●CONTINUOUS FEEL OF URINE (持续尿意)","●POLYURIA (多尿)"]
   },
   "Symptoms6":{
     "id":6,
     "title":"CARDIOVASCULAR SYMPTOMS",
     "lineStart":"#EAEF9D",
-    "lineEnd":"#C1D95C"
+    "lineEnd":"#C1D95C",
+    "detail":["● HIGH FEVER (高烧)","● FAST HEART RATE (心率加快)","● CHEST PAIN (胸痛) ","● PALPITATIONS (心悸)"]
   },
   "Symptoms7":{
     "id":7,
     "title":"NEUROLOGICAL SYMPTOMS",
     "lineStart":"#C1D95C",
-    "lineEnd":"#C8EAD1"
+    "lineEnd":"#C8EAD1",
+    "detail":["● NECK PAIN (颈痛)","● STIFF NECK (颈部僵硬)","● DIZZINESS (头晕)","● MOVEMENT STIFFNESS (动作僵硬)","● SPINNING MOVEMENTS (旋转感)","● LOSS OF BALANCE (失去平衡)","● UNSTEADINESS (不稳定感)","● WEAKNESS OF ONE BODY SIDE (一侧身体无力)","● ALTERED SENSORIUM (感知异常)","● LOSS OF SMELL (嗅觉丧失)","● VISUAL DISTURBANCES (视觉障碍)"]
   },
   "Symptoms8":{
     "id":8,
     "title":"GASTROINTESTINAL SYMPTOMS",
     "lineStart":"#C8EAD1",
-    "lineEnd":"#A8E0B7"
+    "lineEnd":"#A8E0B7",
+    "detail":["","","","",""],
+    "D":[
+      "● BELLY PAIN (腹痛)","● ABNORMAL MENSTRUATION (月经异常)","● DISTENTION OF ABDOMEN (腹胀)","● STOMACH BLEEDING (胃出血)","● HISTORY OF ALCOHOL CONSUMPTION (饮酒史)"
+    ]
   },
   "Symptoms9":{
     "id":9,
     "title":"MUSCULOSKELETAL SYMPTOMS",
     "lineStart":"#A8E0B7",
-    "lineEnd":"#C1D95C"
+    "lineEnd":"#C1D95C",
+    "detail":["● JOINT PAIN (关节疼痛)","● MUSCLE WASTING (肌肉萎缩)","● BACK PAIN (背痛)","● HIP JOINT PAIN (髋关节疼痛)","● KNEE PAIN (膝痛)","● MUSCLE WEAKNESS (肌肉无力)","● CRAMPS (抽筋)","● BRUISING (淤血)"]
   },
   "Symptoms10":{
     "id":10,
     "title":"OTHER SYMPTOMS",
     "lineStart":"#C1D95C",
-    "lineEnd":"#EAEF9D"
+    "lineEnd":"#EAEF9D",
+    "detail":["● OBESITY (肥胖)","● SWOLLEN LEGS (腿部肿胀)","● SWOLLEN BLOOD VESSELS (血管肿胀)","● PUFFY FACE AND EYES (面部和眼睛浮肿)","●  ENLARGED THYROID (甲状腺肿大)","● BRITTLE NAILS (脆弱指甲)","● EXCESSIVE HUNGER (过度饥饿)","● EXTRAMARITAL CONTACTS (婚外性行为)","● DRYING AND TINGLING LIPS (唇干和刺痛)","● SLURRED SPEECH (口齿不清)","● BLACKHEADS (黑头)","● SCARRING (疤痕)","● SKIN PEELING (皮肤脱落)","● SMALL DENTS IN NAILS (指甲上小凹痕)","● INFLAMMATORY NAILS (指甲发炎)","● BLISTER (水疱)","● RED SORE AROUND NOSE (鼻子周围红肿痛处)","● YELLOW CRUST OOZE (黄色结痂渗出物)","● PROGNOSIS (预后)"]
   }
 }

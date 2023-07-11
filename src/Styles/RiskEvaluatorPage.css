@@ -68,7 +68,11 @@
   height: 3px;
   /* background: linear-gradient(90deg, #5AA7A7 0%, #96D7C6 127.46%); */
   margin-top: 30px;
-  
+}
+
+.bottomLineCard{
+  height: 3px;
+  margin: 10px 10% 0 10% ;
 }
 
 @media (max-width: 1280px){
@@ -106,4 +110,49 @@
 
 .riskCards{
   margin-bottom: 100px;
+}
+
+.Popper{
+  border: 10px solid red;
+  position: absolute;
+  position: relative;
+  position: fixed;
+}
+
+.hh{
+  border-radius: 8px;
+  transition: opacity 20s ease-in-out;
+  
+}
+
+.cardDetailItemTitle{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cardDetailItem_overflow{
+  overflow: scroll;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 10px 10px 0 10px;
+}
+
+.cardDetailItem{
+  /* border: 1px solid red; */
+  width: 85%;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.cardDetailItemAdd{
+  margin: 1px 5px 0 5px;
+  justify-self: end;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cardDetailCross{
+  float: right;
+  margin-right: 10px;
 }

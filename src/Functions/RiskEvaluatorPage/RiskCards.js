@@ -18,6 +18,8 @@ export default function RiskCards() {
   const test2=()=>{
     console.log('111')
   }
+
+  
   return (
     <div className='totolCards'>
       <Grid container spacing={3}>
