@@ -13,6 +13,12 @@ import ResearchDescription from "../../Components/OurTeamPage/ContentPage/Resear
 import AlgorithmText from "../../Components/OurTeamPage/ContentPage/AlgorithmText";
 import SixthImg from "../../Components/OurTeamPage/ContentPage/SixthImg";
 import AlgorithmDescription from "../../Components/OurTeamPage/ContentPage/AlgorithmDescription";
+import DesignText from "../../Components/OurTeamPage/ContentPage/DesignText";
+import SeventhImg from "../../Components/OurTeamPage/ContentPage/SeventhImg";
+import DesignDescription from "../../Components/OurTeamPage/ContentPage/DesignDescription";
+
+
+
 
 
 const ContentPage = () => (
@@ -42,6 +48,11 @@ const ContentPage = () => (
             <AlgorithmText />
             <SixthImg />
             <AlgorithmDescription />
+        </div>
+        <div className="designHolder">
+            <DesignText />
+            <SeventhImg />
+            <DesignDescription />
         </div>
     </div>
 )

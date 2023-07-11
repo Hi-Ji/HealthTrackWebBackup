@@ -1,0 +1,36 @@
+.designTextHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.designTitleText {
+    color: rgba(236, 99, 61, 0.80);
+    font-family: Alef;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 2.44vh;
+}
+
+.designContentText {
+    color: #223C40;
+    font-family: Nanum Pen Script;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.1vh;
+}
+
+.designDescriptionText {
+    color: #223C40;
+    font-family: Alef;
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    width: 17vw;
+    margin-left: 3.1vw;
+    margin-top: 15.2vh;
+}
