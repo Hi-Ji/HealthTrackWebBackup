@@ -5,16 +5,33 @@ import Modal from '@mui/base/Modal';
 import Button from '@mui/base/Button';
 import { useSpring, animated } from '@react-spring/web';
 import Add from '../../Components/RiskEvaluatorPage/Img/Add.svg'
+import Delete from '../../Components/RiskEvaluatorPage/Img/Delete.svg'
 import Cross from '../../Components/RiskEvaluatorPage/Img/Cross.svg'
 
-export default function Popper( { open, setOpen, top, left, width, height, windowHeight, windowWidth, Symptoms } ) {
+export default function Popper( { open, setOpen, top, left, width, height, windowHeight, windowWidth, Symptoms, setSymptoms_List, User_Symptoms_List, setUser_Symptoms_List } ) {
   const handleClose = () => setOpen(false);
 
+  // const [Symptoms_List, setSymptoms_List] = useState([]);
+
+  const userAdd = (detailItem) => {
+    if (User_Symptoms_List.includes(detailItem)==false) {
+      setUser_Symptoms_List([...User_Symptoms_List,detailItem])
+    }
+  };
+
+  const userDelete = (detailItem) => {
+    if (User_Symptoms_List.includes(detailItem)) {
+      setUser_Symptoms_List(User_Symptoms_List.filter(item => item !== detailItem))
+    }
+  };
+
+  // const updatedList = Symptoms.detail.map((detailItem) => [...detailItem].join(''));
+  //   setSymptoms_List((prevList) => [...prevList, ...updatedList]);
 
   const test = () => {
-
-    console.log(`${Symptoms.detail}`);
+    // console.log('m')
   }
+  
  
   return (
     <div>
@@ -33,10 +50,15 @@ export default function Popper( { open, setOpen, top, left, width, height, windo
               </div>
               <div className='bottomLineCard' style={{ background: `linear-gradient(90deg, ${Symptoms.lineStart} 0%, ${Symptoms.lineEnd} 127.46%)` }}></div>
               <div className='cardDetailItem_overflow' style={{height:`${height-10}px`}}>
-                {Symptoms.detail.map((detailItem, index) => (
+                {Symptoms.detail.map((detailItem, index) => 
+                (
                   <div>
-                    <div key={index} className='cardDetailItem'>{detailItem}</div>
-                    <div className='cardDetailItemAdd'><img src={Add} alt="Add" /></div>
+                    <div key={index} className='cardDetailItem'>● {detailItem}</div>
+                    {/* <div className='cardDetailItemAdd' onClick={()=>{userAdd(detailItem)}} ><img src={Add} alt="Add" /></div> */}
+
+                    <div className='cardDetailItemAdd' >
+                      {User_Symptoms_List.includes(detailItem)?<img src={Delete} alt="Delete" onClick={()=>{userDelete(detailItem)}} />:<img src={Add} alt="Add" onClick={()=>{userAdd(detailItem)}} />}
+                    </div>
                   </div>
                 ))}
                 

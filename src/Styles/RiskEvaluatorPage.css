@@ -102,9 +102,11 @@
   width: 32px;
   float: right;
   margin-right: 10%;
-  position: relative;
+  /* position: relative;
   top: 30px;
-  right: 5%;
+  right: 5%; */
+  margin-right: 20%;
+  margin-top: 35px;
   z-index: -1;
 }
 
@@ -155,4 +157,48 @@
 .cardDetailCross{
   float: right;
   margin-right: 10px;
+}
+
+.symptoms_list_title{
+  margin: 10px 30px 0 30px;
+  text-align: center;
+}
+
+.symptoms_list_cross{
+  float: right;
+  margin-top: -17px;
+  position: relative;
+  right: 10px;
+}
+
+.symptoms_list_line{
+  height: 2px;
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+.symptoms_list_item{
+  width: fit-content;
+}
+
+.symptoms_list_item_Add{
+  float: right;
+  margin-top: -20px;
+  position: relative;
+  left: 10px;
+}
+
+.symptoms_list_item_totol{
+
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: 0 auto 10px auto;
+  border-bottom: 0.1px solid #223C40;
+  padding-bottom: 5px;
+}
+
+.symptoms_list_search{
+  margin: 10px;
+  text-align: center;
+
 }

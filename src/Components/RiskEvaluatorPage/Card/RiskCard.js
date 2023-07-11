@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Popper from '../../../Functions/RiskEvaluatorPage/Popper';
 
-const RiskCard = ( {Symptoms, img} ) => {
+const RiskCard = ({Symptoms, img, setSymptoms_List, setUser_Symptoms_List, User_Symptoms_List}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
 
@@ -18,6 +18,7 @@ const RiskCard = ( {Symptoms, img} ) => {
   const [windowWidth, setWindowWidth] = useState();
   
   const buttonRef = useRef(null);
+
 
   const handleClick = () => {
     const buttonRect = buttonRef.current.getBoundingClientRect();
@@ -56,8 +57,8 @@ const RiskCard = ( {Symptoms, img} ) => {
 
 
   const test2=()=>{
-    console.log(Symptoms.id)
-    console.log(open)
+    // console.log(Symptoms.id)
+    // console.log(open)
     
   }
   
@@ -79,7 +80,7 @@ const RiskCard = ( {Symptoms, img} ) => {
       </CardActionArea>
     </Card>
 
-    {open && <Popper open={open} setOpen={setOpen} top={top} left={left} width={width} height={height} windowHeight={windowHeight} windowWidth={windowWidth} Symptoms={Symptoms} />}
+    {open && <Popper open={open} setOpen={setOpen} top={top} left={left} width={width} height={height} windowHeight={windowHeight} windowWidth={windowWidth} Symptoms={Symptoms} setSymptoms_List={setSymptoms_List} setUser_Symptoms_List={setUser_Symptoms_List} User_Symptoms_List={User_Symptoms_List} />}
     
     </Fragment>
   );
