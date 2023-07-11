@@ -6,6 +6,7 @@ import Heart from '../Components/RiskEvaluatorPage/Img/Heart.svg'
 import List from '../Components/RiskEvaluatorPage/Img/List.svg'
 
 const RiskEvaluator = () => {
+  
   return (
     <div className='test_padding'>
       <div className='riskList'>

@@ -18,7 +18,17 @@ const IntroBanner = () => {
     const goOurTeam = () => {
         navigate('/ourteam');
     }
-    
+
+    const goRiskRvaluator = () => {
+        navigate('/riskevaluator');
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
     return (
         <div className="bannerHolder">
             <div className="firstHalfSplitHolder">
@@ -40,7 +50,7 @@ const IntroBanner = () => {
 
 
                 </div>
-                <div className="secondLeftVSplitHolder">
+                <div className="secondLeftVSplitHolder" onClick={()=>{goRiskRvaluator();scrollToTop()}}>
                     <div className="symptomFinderText">
                         {Text.SymptonFinder}<br />
                         {Text.SymptonFinder2}
