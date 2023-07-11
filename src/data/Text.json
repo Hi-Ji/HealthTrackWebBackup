@@ -44,6 +44,17 @@
     "IntroducingRes" : "Introducing Researchers",
     "Research" : "Research involves the collection, organization and analysis of evidence to increase understanding of the related topics in the website...",
     "IntroducingAl" : "Introducing Algorithm Developers ",
-    "ACollection" : "a collection of algorithms that interpret signals from webpages (e.g., keywords, links, etc.), with the goal of ranking the content that best answers a search query cannot go any further..."
+    "ACollection" : "a collection of algorithms that interpret signals from webpages (e.g., keywords, links, etc.), with the goal of ranking the content that best answers a search query cannot go any further...",
+    "IntroducingD" : "Introducing Designers ",
+    "UXDesign" : "UX design is all about identifying and solving user problems; UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces. UX design usually comes first in the product development process, followed by UI.",
+    "AllOver" : "The team from all over the world",
+    "1" : "1 The data presented on this website is all from the core algorithm calculation in this project, HEALTHTRACKER reserves the right to the final interpretation of the above terms in this website.",
+    "2" : "2 Drug appears in this web is the recomandation we get, these drugs must be under the guidance of professional doctors use. ",
+    "HealthTracker" : "HealthTracker",
+    "OurBest" : "Our best services",
+    "2023" : "2023/7/10",
+    "c" : "© 2023 HealthTracker, Inc.",
+    "Terms" : "- Terms",
+    "Privacy" : "- Privacy (Updated 2023)"
 
 }

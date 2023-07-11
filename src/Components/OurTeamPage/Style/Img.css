@@ -29,3 +29,35 @@
     width: 11.3vw;
     padding-left: 4.3vw;
 }
+
+.seventhImg{
+    width: 13.5vw;
+    padding-left: 7.8vw;
+    padding-top: 3.46vh;
+
+}
+
+.eighthImg{
+    width: 22.2vw;
+    position: absolute;
+    top: 580vh;
+    z-index: -2;
+}
+
+.ninethImg{
+    width: 17.86vw;
+    position: absolute;
+    left: 76.4vw;
+    top: 670vh;
+    z-index: -2;
+}
+
+.tenthImgHolder{
+    display: flex;
+    justify-content: center;
+    padding-top: 12.3vh;
+}
+
+.tenthImg{
+    width: 27.3vw;
+}
