@@ -1,0 +1,62 @@
+{
+  "Symptoms1":{
+    "id":1,
+    "title":"SKIN-RELATED SYMPTOMS",
+    "lineStart":"#5AA7A7",
+    "lineEnd":"#96D7C6"
+  },
+  "Symptoms2":{
+    "id":2,
+    "title":"RESPIRATORY SYMPTOMS",
+    "lineStart":"#96D7C6",
+    "lineEnd":"#BAC94A"
+  },
+  "Symptoms3":{
+    "id":3,
+    "title":"DIGESTIVE SYMPTOMS",
+    "lineStart":"#BAC94A",
+    "lineEnd":"#EAEF9D"
+  },
+  "Symptoms4":{
+    "id":4,
+    "title":"GENERAL SYMPTOMS",
+    "lineStart":"#EAEF9D",
+    "lineEnd":"#96D7C6"
+  },
+  "Symptoms5":{
+    "id":5,
+    "title":"URINARY SYMPTOMS",
+    "lineStart":"#96D7C6",
+    "lineEnd":"#5AA7A7"
+  },
+  "Symptoms6":{
+    "id":6,
+    "title":"CARDIOVASCULAR SYMPTOMS",
+    "lineStart":"#EAEF9D",
+    "lineEnd":"#C1D95C"
+  },
+  "Symptoms7":{
+    "id":7,
+    "title":"NEUROLOGICAL SYMPTOMS",
+    "lineStart":"#C1D95C",
+    "lineEnd":"#C8EAD1"
+  },
+  "Symptoms8":{
+    "id":8,
+    "title":"GASTROINTESTINAL SYMPTOMS",
+    "lineStart":"#C8EAD1",
+    "lineEnd":"#A8E0B7"
+  },
+  "Symptoms9":{
+    "id":9,
+    "title":"MUSCULOSKELETAL SYMPTOMS",
+    "lineStart":"#A8E0B7",
+    "lineEnd":"#C1D95C"
+  },
+  "Symptoms10":{
+    "id":10,
+    "title":"OTHER SYMPTOMS",
+    "lineStart":"#C1D95C",
+    "lineEnd":"#EAEF9D"
+  }
+}

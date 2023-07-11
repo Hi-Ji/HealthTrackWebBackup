@@ -4,11 +4,14 @@ import DrugInteraction from "../../Components/IntroPage/Image/DrugInteraction.sv
 import SymptonFinder from "../../Components/IntroPage/Image/SymptomFinder.svg";
 import HealthAssessment from "../../Components/IntroPage/Image/HealthAssessment.svg";
 import Notification from "../../Components/IntroPage/Image/Notification.svg";
+
 import OurTeam from "../../Components/IntroPage/Image/OurTeam.svg";
+
 import { useNavigate } from "react-router-dom";
 
 
 const IntroBanner = () => {
+
     
     const navigate = useNavigate();
 
@@ -34,6 +37,8 @@ const IntroBanner = () => {
                         <img src={DrugInteraction} className="drugInteractionImg" />
                         <div style={{ height: "1rem" }}></div>
                     </div>
+
+
                 </div>
                 <div className="secondLeftVSplitHolder">
                     <div className="symptomFinderText">
@@ -51,6 +56,7 @@ const IntroBanner = () => {
                     </div>
                     <img src={HealthAssessment} className="healthAssessmentImg" />
                 </div>
+
                 <div className="secondRightHSplitHolder">
                     <div className="firstRightVSplitHolder">
                         <div className="notificationText">
@@ -63,11 +69,14 @@ const IntroBanner = () => {
                             {Text.OurTeam}
                         </div>
                         <img src={OurTeam} className="ourTeamImg" />
+
                     </div>
                 </div>
             </div>
         </div>
+
     )
+
 }
 
-export default IntroBanner;
+export default IntroBanner

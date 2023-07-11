@@ -4,15 +4,17 @@
     background: rgba(77, 177, 147, 0.00);
     width: 20vh;
     height: 6.1vh;
-    margin-top: 3.3vh;
+    /* margin-top: 3.3vh; */
+    margin: 20px auto -20px auto;
     text-align: center;
-    margin-left: 37%;
+    /* margin-left: 37%; */
     user-select: none;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 .ellipseSignUpButtonHolder:hover{
     background-color: rgb(255, 202, 202);;
@@ -25,5 +27,5 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    margin-top: 7%;
+    padding-top: 11px;
 }

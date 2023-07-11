@@ -130,7 +130,7 @@ code {
 .navbar{
   position: fixed!important;
   margin-bottom: 100px!important;
-  z-index: 10px;
+  z-index: 10;
 }
 
 
@@ -336,8 +336,4 @@ code {
     width: 400px;
     margin: 0 auto;
   }
-}
-
-.test{
-  border: 1px solid red;
 }

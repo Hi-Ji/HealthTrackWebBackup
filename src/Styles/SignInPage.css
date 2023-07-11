@@ -1,8 +1,25 @@
 @import "../Components/SignInPage/SignInPage.css";
 
+@media (min-width: 900px) {
+    .pageSpliter {
+        display: flex;
+    }
 
-.pageSpliter {
-    display: flex;
+    .pageSpliter1 {
+        display: none;
+    }
+
+    .ellipseLeftRightImg{
+        display: none;
+    }
+  }
+
+@media (max-width: 900px) {
+    .pageSpliter {
+        display: none;
+    }
+
+    
 }
 
 .ellipsePage {
@@ -65,9 +82,39 @@
     margin-top: 68.43vh;
 }
 
+.ellipseLeftRightImg{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -400px;
+    position: relative;
+    z-index: -10;
+}
+
+.ellipseLeftImg1 {
+    /* border: 1px solid red; */
+    height: 24.4vh;
+    width: 24.2vh;
+    margin-right: 10px;
+    padding-bottom: 50px;
+    opacity: 0.5;
+}
+
+.ellipseRightImg1 {
+    /* border: 1px solid red; */
+    height: 23.6vh;
+    width: 24.2vh;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.EllipseCenterImg1{
+    width: 40.2vh;
+    margin-top: -80px;
+    opacity: 0.5;
+}
+
 .ellipseCenterImg {
     position: absolute;
-
     width: 30.2vh;
     margin-left: 25vh;
     margin-top: 55.43vh;
@@ -84,15 +131,30 @@
     padding-top: 23.6vh;
 }
 
-.signUpText1 {
-    color: #223C40;
-    font-size: 5.3vh;
-    font-family: Alef;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    text-align: center;
-    padding-top: 15.6vh;
+@media (min-width: 900px) {
+    .signUpText1 {
+        color: #223C40;
+        font-size: 5.3vh;
+        font-family: Alef;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        text-align: center;
+        padding-top: 11.6vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .signUpText1 {
+        color: #223C40;
+        font-size: 5.3vh;
+        font-family: Alef;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        text-align: center;
+        padding-top: 23.7vh;
+    }
 }
 
 
@@ -148,4 +210,23 @@
     display: inline-block;
     width: 49%;
     max-width: 230px;
+}
+
+@media (max-width: 900px) {
+    .pageSpliter2{
+        margin-bottom: -130px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .EllipseSignUpButtonBGC{
+        height: 800px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(77, 177, 147, 0.30);
+        bottom: -100px;
+        z-index: -1;
+        margin-top: -780px;
+        border-radius: 140px;
+    }
 }

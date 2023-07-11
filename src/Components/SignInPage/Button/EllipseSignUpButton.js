@@ -8,10 +8,12 @@ const EllipseSignUpButton = () => {
     }
 
     return (
+        <div>
         <div className="ellipseSignUpButtonHolder" onClick={navigate_signup_page}>
             <div className="ellipseSignUpButtonText">
                 {Text.SIGNUP}
             </div>
+        </div>
         </div>
     )
 }
