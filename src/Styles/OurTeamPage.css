@@ -58,11 +58,12 @@
     display: flex;
     padding-top: 5%;
     width: 100%;
+    flex-direction: column;
     /* height: 628%; */
 }
 
 .lineImg {
-    height: 452vh;
+    height: 544vh;
     top: 18.8vh;
     left: 17.5vw;
     z-index: -2;
@@ -100,20 +101,129 @@
     margin-left: 7vw;
 }
 
-.frontEndHolder2{
+.frontEndHolder2 {
     margin-top: 20vh;
     display: flex;
     margin-left: 22.8vw;
 }
 
-.researchHolder{
+.researchHolder {
     display: flex;
     margin-top: 57.3vh;
     margin-left: 24.3vw;
 }
 
-.algorithmHolder{
+.algorithmHolder {
     display: flex;
     margin-top: 67vh;
     margin-left: 24.3vw;
 }
+
+.designHolder {
+    display: flex;
+    margin-top: 71vh;
+    margin-left: 24.3vw;
+}
+
+.meetHolder {
+    display: flex;
+    margin-top: 96vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meetTitleText {
+    color: #223C40;
+    font-family: Angkor;
+    font-size: 5.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.meetContent {
+    padding-top: 0.8vh;
+    color: #223C40;
+    font-family: Alatsi;
+    font-size: 1.85vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 5.7vh;
+}
+
+.botTextHolder {
+    display: flex;
+    flex-direction: column;
+    width: 30.8vw;
+    margin-left: 18.0556vw;
+    padding-top: 12.3vh;
+}
+
+.firstText {
+    color: #646464;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.secondText {
+    color: #646464;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-top: 3.36vh;
+}
+
+.thirdText {
+    padding-top: 9.165vh;
+    color: #000;
+    font-family: Alef;
+    font-size: 2.6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.fourthText {
+    color: #646464;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 1.63vh;
+}
+
+.fifthText {
+    padding-top: 0.7vh;
+    color: #646464;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.botBarHolder {
+    margin-top: 14.26vh;
+    background: #dcdcdc;
+    height: 6vh;
+    display: flex;
+    color: #223C40;
+    align-items: center;
+    font-family: Alef;
+    font-size: 0.79vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-left: 18.056vw;
+    gap: 3vw;
+}
+
