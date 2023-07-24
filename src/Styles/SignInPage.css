@@ -183,22 +183,37 @@
     width: 7vh;
     height: 7vh;
     cursor: pointer;
+    border-radius: 2vh;
     transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2),
+                -4px -4px 15px rgba(255, 255, 255, 1);
+
 }
 
 .gmail:hover{
     scale: 0.9;
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+    0 0 0 rgba(255,255,255,0.8),
+    inset 4px 4px 15px rgba(0,0,0,0.1),
+    inset -4px -4px 15px rgba(255,255,255,1);
 }
 
 .facebook{
     width: 7vh;
     height: 7vh;
     cursor: pointer;
+    border-radius: 2vh;
     transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2),
+                -4px -4px 15px rgba(255, 255, 255, 1);
 }
 
 .facebook:hover{
     scale: 0.9;
+    box-shadow: 0 0 0 rgba(0,0,0,0.2),
+    0 0 0 rgba(255,255,255,0.8),
+    inset 4px 4px 15px rgba(0,0,0,0.1),
+    inset -4px -4px 15px rgba(255,255,255,1);
 }
 
 .signinButton{

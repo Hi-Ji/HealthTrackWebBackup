@@ -11,7 +11,18 @@
     flex-shrink: 0;
     border-color: transparent;
     padding-left: 20px;
+    transition: all 0.2s ease-in-out;
 }
+
+.usernameField:focus-within{
+    background-color: white;
+}
+
+.usernameField:focus-within .userIcon{
+    transition: all 0.2s ease-in-out;
+    color: #223c40;
+}
+
 
 .usernameTextInput {
     height: 6vh;
