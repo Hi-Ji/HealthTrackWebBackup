@@ -25,8 +25,8 @@ const RiskEvaluator = () => {
         <SymptomsList User_Symptoms_List={User_Symptoms_List} setUser_Symptoms_List={setUser_Symptoms_List} />
       </div>
       <div className='riskHeart'>
-        <div style={{fontSize:'20px'}}>OUR BEST INSURANCE SERVICES</div>
-        <img src={Heart} alt="Heart" />
+        <div style={{fontSize:'30px', fontFamily: 'Nanum Pen Script'}}>OUR BEST INSURANCE SERVICES</div>
+        <img style={{paddingTop: '10px'}} src={Heart} alt="Heart" />
       </div>
       <div className='riskSearchBar'>
         <SearchAppBar />

@@ -13,7 +13,7 @@
   height: 40px;
   border-radius: 8px;
   border: none;
-  box-shadow: 0px 8px 40px 0px #00000026;
+  box-shadow: 0 8px 40px 0 #00000026;
   display: inline-block;
 }
 
@@ -41,17 +41,18 @@
   /* width: 250px; */
   text-align: center;
   background-color: rgba(255, 255, 255, 0)!important;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0 10px 0;
   /* position: relative;
   z-index: -1; */
 }
 
 .card:hover{
-  background-color: gray;
+  background-color: rgb(128, 128, 128);
 }
 
 .cardTitle{
   height: 22px;
+  font-family: 'Lexend', serif;
 }
 
 .totolCards{
@@ -86,6 +87,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 40px 0;
+  font-family: 'Lexend', serif;
   border-top: 0.5px solid #4DB193;
 }
 
@@ -130,6 +132,8 @@
 .cardDetailItemTitle{
   text-align: center;
   margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Lexend', serif;
 }
 
 .cardDetailItem_overflow{
@@ -145,6 +149,7 @@
   width: 85%;
   font-size: 12px;
   display: inline-block;
+  font-family: 'Noto Sans SC', serif;
 }
 
 .cardDetailItemAdd{
