@@ -26,8 +26,8 @@ const SignIn = () => {
             </div>
             <UsernameField setUsername={setUsername}/>
             <PasswordField setPassword={setPassword}/>
-            <div className="signinButton" onClick={LogIn}>
-                <div className='signinButtonEach'><LoginButton /></div>
+            <div className="signinButton">
+                <div className='signinButtonEach' onClick={LogIn}><LoginButton /></div>
                 <div className='signinButtonEach' ><LoginBackButton /></div>
             </div>
             <div className="hLine"></div>

@@ -245,3 +245,28 @@
         border-radius: 140px;
     }
 }
+
+.verificationCodeInput{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.verificationCodeInput input{
+    width: 5vh;
+    height: 5vh;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    margin: 0 10px;
+    font-family: 'Lexend', serif;
+    font-size: 20px;
+    transition: border-bottom-color 0.5s ease;
+}
+
+.verificationCodeInput input:focus{
+    border-bottom: 2px solid #294f2c;
+    outline: none;
+}
