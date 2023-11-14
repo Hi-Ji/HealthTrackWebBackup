@@ -1,0 +1,6 @@
+{
+  "PleaseCheckTitle" : "Please Check Your Info",
+  "PleaseCheckContent" : "Please check that username, password, and email address are entered correctly",
+  "TryAgain": "Try Again",
+  "UsernameExistsContent" : "The chosen username has already been used"
+}

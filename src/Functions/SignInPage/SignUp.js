@@ -9,6 +9,15 @@ import Facebook from "../../Components/SignInPage/Image/facebook.svg";
 import React, {useRef, useState} from "react";
 import {SignUpRequest} from "../../Http/SignUpRequest";
 import {VerifyRequest} from "../../Http/VerifyRequest";
+import {Alert, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
+import Button from "@mui/material/Button";
+import WarningIcon from '@mui/icons-material/Warning';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import SignUpDialog from "../../Components/SignInPage/Dialog/SignUpDialog";
+import SignUpText from "../../data/SignUp.json";
+import {Snackbar} from "@mui/base";
+import VerificationSnackBar from "../../Components/SignInPage/Dialog/VerificationSnackBar";
+
 
 const SignUp = () => {
     const [password, setPassword] = useState('');
@@ -16,10 +25,18 @@ const SignUp = () => {
     const [email, setEmail] = useState('')
     const [isSignedUp, setIsSignedUp] = useState(false);
     const [codeInputs, setCodeInputs] = useState(Array(6).fill(''));
-
+    const [open, setOpen] = useState(false)
+    const [isRight, setIsRight] = useState(false)
     const inputsRef = useRef([]);
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [usernameDialogOpen, setUsernameDialogOpen] = useState(false)
+    const [isLoading, setIsLoading] = useState(false);
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    const validateEmail = (email) => {
+        return emailRegex.test(email);
+    };
     const handleInputChange = (index, value) => {
         setCodeInputs(currentCodes => {
             const newCodes = [...currentCodes];
@@ -41,18 +58,47 @@ const SignUp = () => {
         }
     };
     const SignUp = () => {
-        const response = SignUpRequest({username: username, password: password, email: email});
-        setIsSignedUp(true)
+        if (!username || !password || !email) {
+            // Open the dialog if any field is empty
+            setDialogOpen(true);
+        } else if (!validateEmail(email)) {
+            // Open the dialog if email is not in correct format
+            setDialogOpen(true);
+            // You can set another state here to customize the dialog message for email format error
+        } else {
+            setIsLoading(true);
+            // Proceed with sign up if all fields are filled and email is in the correct format
+            SignUpRequest({ username, password, email }).then(response => {
+                setIsLoading(false)
+                if(response.data.statusCode === 305){
+                    setUsernameDialogOpen(true)
+                } else {
+                    setIsSignedUp(true);
+                }
+            })
+
+        }
     }
 
     const Verify = () => {
         const verificationCode = codeInputs.join('');
-        const response = VerifyRequest({username, password, email, verificationCode});
+        if(verificationCode.length < 6){
+            setOpen(true)
+        }
+        VerifyRequest({username, password, email, verificationCode}).then(response => {
+            setOpen(true)
+            if(response.data.statusCode === 200) {
+                setIsRight(true)
+            }
+        });
     };
 
     const onBack = () => {
         setCodeInputs(Array(6).fill(''));
         setIsSignedUp(false);
+        setEmail('');
+        setUsername('');
+        setEmail('');
     }
 
     return (
@@ -82,6 +128,7 @@ const SignUp = () => {
                             />
                         ))}
                     </div>
+                    <div style={{paddingTop: '3vh'}}></div>
                     <div className="signinButton">
                         <div className='signinButtonEach'>
                             <div className="loginButtonHolder">
@@ -110,7 +157,7 @@ const SignUp = () => {
             {!isSignedUp && (
                 <div className="signinButton">
                     <div className='signinButtonEach' onClick={onBack}><LoginBackButton /></div>
-                    <div className='signinButtonEach' onClick={SignUp}><SignupButton /></div>
+                    <div className='signinButtonEach' onClick={SignUp}><SignupButton isLoading={isLoading}/></div>
                 </div>
             )}
             <div className="hLine"></div>
@@ -118,6 +165,10 @@ const SignUp = () => {
                 <img src={Gmail} className="gmail" />
                 <img src={Facebook} className="facebook" />
             </div>
+            <SignUpDialog title={SignUpText.PleaseCheckTitle} content={SignUpText.PleaseCheckContent} setDialogOpen={setDialogOpen} dialogOpen={dialogOpen} buttonText={SignUpText.TryAgain} isLoading={false}/>
+            <SignUpDialog title={SignUpText.PleaseCheckTitle} buttonText={SignUpText.TryAgain} content={SignUpText.UsernameExistsContent} setDialogOpen={setUsernameDialogOpen} dialogOpen={usernameDialogOpen} isLoading={isLoading}/>
+            <div style={{paddingBottom: '8vh'}}></div>
+            <VerificationSnackBar open={open} setOpen={setOpen} isRight={isRight} />
         </div>
     )
 }

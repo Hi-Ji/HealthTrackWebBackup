@@ -6,7 +6,9 @@ import LoginBackButton from "../../Components/SignInPage/Button/LoginBackButton"
 import Gmail from "../../Components/SignInPage/Image/gmail.svg";
 import Facebook from "../../Components/SignInPage/Image/facebook.svg";
 import { LogInRequest } from "../../Http/LogInRequest"
-import { useState } from "react";
+import {useContext, useState} from "react";
+import {AuthContext} from "../../AuthContext";
+import {useNavigate} from "react-router-dom";
 
 
 
@@ -14,10 +16,18 @@ const SignIn = () => {
 
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
+    const { auth, setAuth } = useContext(AuthContext);
+    const navigate = useNavigate();
 
 
     const LogIn = () => {
-        LogInRequest({username: username, password: password})
+        LogInRequest({username: username, password: password}).then(response => {
+            if(response.data.flag){
+                setAuth(true);
+                console.log(auth)
+                navigate('/intro');
+            }
+        })
     }
     return (
         <div className="signInPage">

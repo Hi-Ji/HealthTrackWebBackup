@@ -29,7 +29,7 @@ const RiskEvaluator = () => {
         <img style={{paddingTop: '10px'}} src={Heart} alt="Heart" />
       </div>
       <div className='riskSearchBar'>
-        <SearchAppBar />
+        <SearchAppBar setUserSymptomsList={setUser_Symptoms_List} userSymptomsList={User_Symptoms_List}/>
       </div>
       <div className='symptomsTitle'>
         SYMPTOMS

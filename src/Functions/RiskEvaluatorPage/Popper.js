@@ -1,8 +1,8 @@
 import React, { Fragment, useState,useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Box, styled } from '@mui/system';
-import Modal from '@mui/base/Modal';
-import Button from '@mui/base/Button';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
 import { useSpring, animated } from '@react-spring/web';
 import Add from '../../Components/RiskEvaluatorPage/Img/Add.svg'
 import Delete from '../../Components/RiskEvaluatorPage/Img/Delete.svg'

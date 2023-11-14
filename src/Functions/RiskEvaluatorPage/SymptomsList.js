@@ -1,8 +1,8 @@
 import React, { Fragment, useState,useEffect, useRef } from 'react';
-import Menu from '@mui/base/Menu';
-import MenuItem, { menuItemClasses } from '@mui/base/MenuItem';
-import Button, { buttonClasses } from '@mui/base/Button';
-import Popper from '@mui/base/Popper';
+import {Menu} from '@mui/base/Menu';
+import MenuItem, { menuItemClasses } from '@mui/material/MenuItem';
+import Button, { buttonClasses } from '@mui/material/Button';
+import { Popper } from '@mui/base';
 import { styled } from '@mui/system';
 import { ListActionTypes } from '@mui/base/useList';
 import List from '../../Components/RiskEvaluatorPage/Img/List.svg'
@@ -136,7 +136,24 @@ export default function SymptomsList({User_Symptoms_List, setUser_Symptoms_List}
             </div>
           ))
         }
-        
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <Button
+              variant="contained"
+              color="primary"
+              onClick={handleButtonClick}
+              size="small"
+              sx={{
+                fontSize: '0.75rem',
+                backgroundColor: '#4DB294',
+                '&:hover': {
+                  backgroundColor: '#3da683' // Adjust for hover state as needed
+                },
+              }}
+              disabled={User_Symptoms_List.length === 0}
+          >
+            Submit
+          </Button>
+        </div>
 
         {/* <div>SYMPTOMS LIST</div> */}
       </Menu>

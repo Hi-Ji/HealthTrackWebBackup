@@ -167,6 +167,7 @@
 .symptoms_list_title{
   margin: 10px 30px 0 30px;
   text-align: center;
+  font-family: 'Lexend', serif;
 }
 
 .symptoms_list_cross{
@@ -184,6 +185,8 @@
 
 .symptoms_list_item{
   width: fit-content;
+  font-size: 12px;
+  font-family: 'Noto Sans SC', serif;
 }
 
 .symptoms_list_item_Add{
