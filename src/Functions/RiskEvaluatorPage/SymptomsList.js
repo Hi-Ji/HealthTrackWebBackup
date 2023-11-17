@@ -1,4 +1,4 @@
-import React, { Fragment, useState,useEffect, useRef } from 'react';
+import React, {Fragment, useState, useEffect, useRef, useContext} from 'react';
 import {Menu} from '@mui/base/Menu';
 import MenuItem, { menuItemClasses } from '@mui/material/MenuItem';
 import Button, { buttonClasses } from '@mui/material/Button';
@@ -9,9 +9,14 @@ import List from '../../Components/RiskEvaluatorPage/Img/List.svg'
 import RedCross from '../../Components/RiskEvaluatorPage/Img/RedCross.svg'
 import Add from '../../Components/RiskEvaluatorPage/Img/Add.svg'
 import Delete from '../../Components/RiskEvaluatorPage/Img/Delete.svg'
+import {AuthContext} from "../../AuthContext";
+import {SymptomFinderRequest} from "../../Http/SymptomFinderRequest";
+import {useNavigate} from "react-router-dom";
 
 
 export default function SymptomsList({User_Symptoms_List, setUser_Symptoms_List}) {
+
+  const { auth, setAuth, isSymptomsSubmitted, setIsSymptomsSubmitted, token, setToken, setDiseaseData } = useContext(AuthContext);
 
   const [buttonElement, setButtonElement] = React.useState(null);
   const [isOpen, setOpen] = React.useState(false);
@@ -21,6 +26,7 @@ export default function SymptomsList({User_Symptoms_List, setUser_Symptoms_List}
   const [temp_User_Symptoms_List, setTemp_User_Symptoms_List] = useState([]);
 
   const [inputItem, setinputItem] = useState([]);
+  const navigate = useNavigate();
 
   const updateAnchor = React.useCallback((node) => {
     setButtonElement(node);
@@ -35,6 +41,31 @@ export default function SymptomsList({User_Symptoms_List, setUser_Symptoms_List}
 
     setOpen((open) => !open);
   };
+
+  const submit = () => {
+    SymptomFinderRequest({ userSymptomsList: User_Symptoms_List, token }).then(response => {
+      if(response.status === 403) {
+        setAuth(false);
+        setToken('');
+      }
+      if (response && response.data && !response.data.flag) {
+        setAuth(false);
+        setToken('');
+      } else if (response && response.data) {
+        setDiseaseData(response.data.data)
+        setIsSymptomsSubmitted(true);
+        setToken(response.data.token)
+        navigate("/symptomresult");
+      }
+    }).catch(error => {
+      if(error.response && error.response.status === 403){
+        setAuth(false);
+        console.log(auth)
+        setToken('');
+      }
+    });
+
+  }
 
   const createHandleMenuClick = (menuItem) => {
     return () => {
@@ -140,7 +171,7 @@ export default function SymptomsList({User_Symptoms_List, setUser_Symptoms_List}
           <Button
               variant="contained"
               color="primary"
-              onClick={handleButtonClick}
+              onClick={submit}
               size="small"
               sx={{
                 fontSize: '0.75rem',

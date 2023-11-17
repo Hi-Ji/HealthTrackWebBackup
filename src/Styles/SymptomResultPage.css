@@ -1,0 +1,159 @@
+.waterDropForm{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 50vh;
+    flex-wrap: wrap;
+    gap: 40px 60px;
+}
+
+.waterDropForm .waterDrop{
+    position: relative;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: transparent;
+
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.1),
+                    15px 25px 10px rgba(0, 0, 0, 0.2),
+                    15px 20px 20px rgba(0,0,0,0.1),
+                inset -10px -10px 15px rgba(255,255,255,0.9);
+    transition: 0.5s ease-in-out;
+}
+
+.waterDropForm .waterDrop:nth-child(1){
+    border-radius: 41% 59% 55% 45% / 39% 34% 66% 61% ;
+}
+
+.waterDropForm .waterDrop:nth-child(2){
+    border-radius: 31% 69% 63% 37% / 47% 43% 57% 53%  ;
+}
+
+.waterDropForm .waterDrop:nth-child(3){
+    border-radius: 40% 60% 24% 76% / 57% 42% 58% 43%   ;
+}
+
+.waterDropForm .waterDrop::before {
+    content: '';
+    position: absolute;
+    top: 4vh;
+    left: 9vh;
+    background-color: #fff;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 47% 53% 42% 58% / 47% 43% 57% 53% ;
+}
+
+.waterDropForm .waterDrop::after{
+    content: '';
+    position: absolute;
+    top: 7vh;
+    left: 10vh;
+    background-color: #fff;
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 47% 53% 42% 58% / 47% 43% 57% 53% ;
+}
+
+.waterDropForm .waterDrop:hover{
+    border-radius: 50%;
+}
+
+.waterDropForm .waterDrop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    font-family: 'Lexend', serif;
+}
+
+.waterDropForm .waterDrop .content h2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #eff0f4;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+                inset -2px -5px 10px rgba(255,255,255,1),
+                15px 15px 10px rgba(0,0,0,0.05),
+                15px 10px 15px rgba(0,0,0,0.025);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.waterDropForm .waterDrop .content a{
+    position: relative;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Lexend', serif;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+.waterDropForm .waterDrop .content a:hover{
+    opacity: 1;
+}
+
+.waterDropForm .waterDrop .content a::before{
+    content: '';
+    position: absolute;
+    width: 65%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.5);
+}
+
+.symptomResultTitleHolder{
+    display: flex;
+    padding-top: 10vh;
+}
+
+.titleTextHolder{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25vh;
+    align-items: flex-start;
+}
+.titleText{
+    padding-top: 6vh;
+    font-family: "Noto Sans SC", serif;
+    width: inherit;
+}
+
+.titleAnimationHolder{
+    position: relative;
+    padding-left: 45vh;
+}
+
+.minorText{
+    width: 50vh;
+    padding-top: 2vh;
+    font-family: "lexend", serif;
+    opacity: 0.7;
+    line-height: 3vh;
+}
+
+.infoHeaderHolder{
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 25vh;
+}
+
+.infoTitleText{
+    font-family: "Noto Sans SC", serif;
+    font-weight: 800;
+    font-size: 4vh;
+    color: #4e8184;
+}

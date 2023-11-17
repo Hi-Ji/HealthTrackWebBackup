@@ -8,6 +8,7 @@ import OurTeamPage from '../Pages/OurTeamPage';
 import RiskEvaluatorPage from '../Pages/RiskEvaluatorPage';
 import React, {useContext, useRef} from 'react';
 import {AuthContext} from "../AuthContext";
+import SymptomResultPage from "../Pages/SymptomResultPage";
 
 const RouterComponent = () => {
   const serRef = useRef(null);
@@ -58,6 +59,7 @@ const RouterComponent = () => {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path='/ourteam' element={<PrivateRoute><NavBarCombination><OurTeamPage /></NavBarCombination></PrivateRoute>} />
           <Route path='/riskevaluator' element={<PrivateRoute><NavBarCombination><RiskEvaluatorPage /></NavBarCombination></PrivateRoute>} />
+          <Route path='/symptomresult' element={<NavBarCombination><SymptomResultPage /></NavBarCombination>} />
           {/* Redirect to home if no match */}
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>

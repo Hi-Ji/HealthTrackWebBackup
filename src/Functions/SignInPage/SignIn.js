@@ -16,7 +16,7 @@ const SignIn = () => {
 
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
-    const { auth, setAuth } = useContext(AuthContext);
+    const { auth, setAuth, token, setToken } = useContext(AuthContext);
     const navigate = useNavigate();
 
 
@@ -24,6 +24,7 @@ const SignIn = () => {
         LogInRequest({username: username, password: password}).then(response => {
             if(response.data.flag){
                 setAuth(true);
+                setToken(response.data.token)
                 console.log(auth)
                 navigate('/intro');
             }
